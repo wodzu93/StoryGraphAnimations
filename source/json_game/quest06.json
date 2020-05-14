@@ -1,0 +1,973 @@
+[
+	{
+		"Title": "Zdobycie plotki o umierającej córce Karczmarza",
+		"Title_Generic": "Rozmowa z przekazaniem informacji",
+		"id": "06-000",
+		"Description": "Bohater brzęczącą monetą zachęca pomocnika karczmarza do opowiedzenia plotek.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes":{									
+										"Amount":">=5"
+									}
+								}
+							}
+						},						
+						"Innkeeper helper": {
+							"Narration": {
+								"Rumour": "Inkeeper's Daughter is ?"
+							},					
+						},						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Rumour": "Inkeeper's Daughter is ?"
+							},
+							"Items": {
+								"Coins": {
+									"Attributes":{
+										"Amount":"-5"
+									}
+								}
+							}							
+						},
+						"Innkeeper helper": {
+							"Narration": {
+								"Rumour": "Inkeeper's Daughter is ?"
+							},
+							"Items": {
+								"Coins": {
+									"Attributes":{									
+										"Amount":"+5"
+									}
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Rozmowa z Karczmarzem",
+		"Title_Generic": "Rozmowa z przekazaniem informacji",
+		"id": "06-001",
+		"Description": "Bohater w rozmowie z karczmarzem dowiaduje się o potrzebie córki i gratyfikacji.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Rumour": "Inkeeper's Daughter is ?"
+							}
+						},
+						"Innkeeper": {
+							"Attributes": {
+								"Need help": "Innkeeper's Daughter"
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Help": "Innkeeper's Daughter"
+							}
+						},
+						"Innkeeper": {
+							"Attributes": {
+								"Need help": "Innkeeper's Daughter"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z karczmy na drogę",
+		"Title_Generic": "Zmiana lokacji",
+		"id": "06-002",
+		"Description": "Bohater wychodzi z karczmy na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}					
+				},
+				"Road": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Connections": {
+						"Road": {
+						}
+					}
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z drogi na las",
+		"Title_Generic": "Zmiana lokacji",
+		"id": "06-003",
+		"Description": "Bohater przechodzi z drogi do lasu.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}					
+				},
+				"Forest": {
+
+				}				
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": {
+						"Forest": {
+						}
+					}
+				},				
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z lasu do chaty czarodzieja",
+		"Title_Generic": "Zmiana lokacji",
+		"id": "06-004",
+		"Description": "Bohater wchodzi z lasu do chaty czarodzieja.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}					
+				},
+				"Wizard's Hut": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}
+				},				
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},
+
+			}
+		}
+	},
+	{
+		"Title": "Rozmowa z Czarodziejem na temat eliksiru",
+		"Title_Generic": "Wymiana przedmiotu na wiedzę fabularną",
+		"Id": "06-005",
+		"Description": "Bohater poznaje warunki uzyskania eliksiru i płaci za półprodukty.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Help": "Innkeeper's Daughter"
+							},
+							"Items": {
+								"Coins": {
+									"Attributes":{									
+										"Amount":">=10"
+									}
+								}
+							}							
+						},
+						"Wizard": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes":{									
+										"Amount":"-10"
+									}
+								}
+							},							
+							"Narration": {
+								"Help": "Innkeeper's Daughter",
+								"Quest": "Zdobycie ziół"
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Coins": {
+									"Attributes":{	
+										"Amount":"+10"
+									}
+								}
+							}
+						}						
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z chaty czarodzieja na las",
+		"Title_Generic": "Zmiana lokacji",
+		"id": "06-006",
+		"Description": "Bohater wychodzi z chaty czarodzieja do lasu.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}					
+				},				
+				"Forest": {
+
+				},
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Connections": {
+						"Forest": {
+						}
+					}	
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zbieranie ziół w lesie",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"id": "06-007",
+		"Description": "Bohater zbiera zioła w lesie bo ma wiadomość o potrzebie ziół dla czarodzieja. Powinno nam zablokować użycie produkcji Zbieranie ziół bez elementów narracyjnych. Sprawdzić. Ale z drugiej strony: jak zlikwidować połączenie z elementem quest?",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Quest": "Zdobycie ziół"
+							}
+						}
+					},
+					"Items": {					
+						"Herbs": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {					
+								"Herbs": {
+									
+								}
+							}							
+						}
+					},
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zgubienie monet w lesie",
+		"Title_Generic": "Upuszczenie przedmiotu",
+		"id": "06-008",
+		"Description": "Dziwna produkcja, w której bohater niby gubi, ale naprawdę to po prostu upuszcza monety. Ale przyda się do uwypuklenia problemu: jak zaznaczyć, że wszystkie posiadane monety są upuszczane. I dziwnie się wyświetla.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {					
+								"Coins": {
+									"Attributes":{									
+										"Amount":"wszystkie dostępne",
+									}
+								}
+							}							
+						}
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {					
+						"Hero": {
+							"Items": {					
+								"Coins": {
+									"Attributes":{									
+										"Amount":"-wszystkie dostępne"
+									}
+								}
+							}
+						}							
+					},
+					"Items": {					
+						"Coins": {
+							"Attributes":{
+								"Amount":"+wszystkie dostępne"
+							}
+						}
+					}							
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z lasu na drogę",
+		"Title_Generic": "Zmiana lokacji",
+		"id": "06-009",
+		"Description": "Bohater wychodzi z lasu na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}					
+				},
+				"Road": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Connections": {
+						"Road": {
+						}
+					}
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z drogi na targowisko",
+		"Title_Generic": "Zmiana lokacji",
+		"id": "06-010",
+		"Description": "Bohater przechodzi z drogi na targowisko.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Market": {
+						}
+					}					
+				},				
+				"Market": {
+
+				},
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": {
+						"Market": {
+						}
+					}
+				},				
+				"Market": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},
+			}
+		}
+	},
+	{
+		"Title": "Przyjęcie łapówki przez świadka czegoś",
+		"Title_Generic": "Przekształcenie przedmiotu w atrybut innego obiektu",
+		"id": "06-011",
+		"Description": "Bohater składa chłopu propozycję korupcyjną, która zostaje przyjęta. Ale czego ona włąściwie dotyczy?",
+			"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Propozycja łapówki": ""
+							},
+							"Items": {
+								"Coins": {
+									"Attributes": {									
+											"Amount": ">=6"
+										}
+								}
+							}							
+						},
+						"Peasant": {
+							"Attributes": {
+								"Witness": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {									
+											"Amount": "+6"
+										}
+								}
+							}	
+						},					
+						"Peasant": {
+							"Narration": {
+								"Propozycja łapówki": ""
+							},
+							"Items": {
+								"Coins": {
+									"Attributes": {									
+											"Amount": "+6"
+										}
+								}
+							}															
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Odrzucenie łapówki przez świadka czegoś",
+		"Title_Generic": "Rozmowa z przekazaniem informacji",
+		"id": "06-012",
+		"Description": "Bohater składa chłopu propozycję korupcyjną. Ale czego ona włąściwie dotyczy?",
+			"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Propozycja łapówki": ""
+							}
+						},
+						"Peasant": {
+							"Attributes": {
+								"Witness": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Propozycja łapówki": ""
+							},
+							"Attributes": {
+								"Wanted": ""
+							}							
+						},					
+						"Peasant": {
+							"Narration": {
+								"Propozycja łapówki": ""
+							},
+							"Attributes": {
+								"Witness": ""
+							}							
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z targowiska na drogę",
+		"Title_Generic": "Zmiana lokacji",
+		"id": "06-013",
+		"Description": "Bohater wychodzi z targowiska na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}					
+				},
+				"Road": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Connections": {
+						"Road": {
+						}
+					}
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kupno ziół na Targowisku ",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"id": "06-014",
+		"Description": "Bohater kupuje ziola od kupca na targu pod wpływem impulsu fabularnego.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=5"
+									}									
+								}
+							},							
+							"Narration": {
+								"Quest": "Herbs"
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Value": "5"
+									}									
+								}
+							}
+						}						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Value": "5"
+									}									
+								},
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=5"
+									}									
+								}								
+							},							
+						},						
+						"Merchant": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+5"
+									}									
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Kradzież ziół na Targowisku ",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "06-015",
+		"Description": "Bohater kradnie zioła kupcowi na targu pod wpływem impulsu fabularnego.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {						
+							"Narration": {
+								"Quest": "Herbs"
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Value": "5"
+									}									
+								}
+							}
+						}						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Value": "5"
+									}									
+								},								
+							},	
+							"Attributes": {
+								"Wanted":""
+							}													
+						},						
+						"Merchant": {
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Wymiana ziół na eliksir",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "06-016",
+		"Description": "Bohater daje czarodziejowi zioła w zamian za eliksir.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {					
+						"Hero": {
+							"Items": {
+								"Herbs": {								
+								}
+							},							
+							"Narration": {
+								"Quest": "Herbs"
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Healing":""
+									}									
+								}
+							}
+						}	
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {					
+						"Hero": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Healing":""
+									}
+								}
+							},							
+						},
+						"Wizard": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+
+									}									
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z drogi na karczmę",
+		"Title_Generic": "Zmiana lokacji",
+		"id": "06-017",
+		"Description": "Bohater wchodzi z drogi do karczmy.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Inn": {
+						}
+					}					
+				},
+				"Inn": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": {
+						"Inn": {
+						}
+					}
+				},
+				"Inn": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Wymiana eliksiru na smoczy ząb(prod.Gen.Pozyskanie przedmiotu)",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "06-018",
+		"Description": "Bohater oddaje karczmarzowi eliksir w zamian za smoczy ząb.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {					
+						"Hero": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Healing":""
+									}
+								}
+							},							
+						},
+						"Innkeeper": {
+							"Items": {
+								"Dragon's tooth": {
+									"Attributes": {
+
+									}									
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {					
+						"Hero": {
+							"Items": {
+								"Dragon's tooth": {
+									"Attributes": {
+
+									}									
+								}
+							},							
+						},
+						"Innkeeper": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Healing":""
+									}
+								}							
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+{
+		"Title": "Aresztowanie bohatera",
+		"Title_Generic": "Zmiana lokacji",
+		"id": "06-019",
+		"Description": "Bohater jest aresztowany i teleportuje się do więzienia",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Wanted": ""
+							}
+						},
+						"Guard": {
+							"Attributes": {
+
+							}
+						}						
+					}
+				},
+				"Prison": {
+
+				},
+				"Town Hall": {
+
+				},								
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+
+				},
+				"Prison": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Wanted": ""
+							}
+						}
+					}
+				},
+				"Town Hall": {
+					"Characters": {
+						"Guard": {
+							"Attributes": {
+							}
+						}
+					}
+				},					
+			}
+		}
+	},
+
+]

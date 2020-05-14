@@ -1,0 +1,397 @@
+{
+	"Locations": {
+		"Ship": {
+			"Characters": {
+				"Captain": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 1000,
+					"y": -60
+				}
+			}
+		},
+		"Port": {
+			"Connections": {
+				"Ship": {
+
+				},
+				"Tavern": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": -60
+				}
+			}
+		},
+		"Tavern": {
+			"Attributes": {
+				"Position": {
+					"x": 1000,
+					"y": 0
+				}
+			}
+		},
+		"Clearing": {
+			"Connections": {
+				"Forest": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 400,
+					"y": 0
+				}
+			}
+		},
+		"Dwarfs Hut": {
+			"Characters": {
+				"Dragon": {
+
+				}
+			},
+			"Items": {
+				"Dragon's Egg": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 20
+				}
+			}
+		},
+		"Witch Hut": {
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 80
+				}
+			}
+		},
+		"Forest": {
+			"Connections": {
+				"Port": {
+
+				},
+				"Dwarfs Hut": {
+
+				},
+				"Witch Hut": {
+
+				},
+				"Wizard's Hut": {
+
+				}
+			},
+			"Characters": {
+				"Bandit": {
+
+				},
+				"Lumberjack": {
+
+				},
+				"Wolf": {
+
+				}
+			},
+			"Items": {
+				"Herbs": {
+
+				},
+				"Wood": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 0
+				}
+			}
+		},
+		"Wizard's Hut": {
+			"Characters": {
+				"Wizard": {
+
+				}
+			},
+			"Items": {
+				"Elixir": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 140
+				}
+			}
+		},
+		"Pasture": {
+			"Connections": {
+				"Village": {
+
+				},
+				"Shepherd's Hideout": {
+
+				}
+			},
+			"Characters": {
+				"Sheperd": {
+
+				}
+			},
+			"Items": {
+				"Sheep": {
+
+				},
+				"Horse": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 200
+				}
+			}
+		},
+		"Road": {
+			"Connections": {
+				"Forest": {
+
+				},
+				"Market": {
+
+				},
+				"Pasture": {
+
+				},
+				"Inn": {
+
+				},
+				"Town Hall": {
+
+				}
+			},
+			"Characters": {
+				"Princess": {
+					"Necklace": {
+
+					},
+					"Coins": {
+
+					}
+				},
+				"Dwarfs": {
+
+				},
+				"Huntman": {
+					"Riffle": {
+
+					}
+				},
+				"Pedestrian": {
+
+				}
+			},
+			"Items": {
+				"Stone": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 400,
+					"y": 200
+				}
+			}
+		},
+		"Market": {
+			"Characters": {
+				"Merchant": {
+					"Coins": {
+
+					}
+				},
+				"Miss": {
+					"Egg": {
+
+					}
+				}
+			},
+			"Items": {
+				"Notice Board": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 140
+				}
+			}
+		},
+		"Village": {
+			"Items": {
+				"Well": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 200
+				}
+			}
+		},
+		"Shepherd's Hideout": {
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 260
+				}
+			}
+		},
+		"Peasant's Hut": {
+			"Connections": {
+				"Road": {
+
+				}
+			},
+			"Characters": {
+				"Peasant": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 200,
+					"y": 280
+				}
+			}
+		},
+		"Inn": {
+			"Characters": {
+				"Innkeeper": {
+
+				},
+				"Innkeeper Helper": {
+
+				},
+				"Drunkard": {
+
+				},
+				"Friend": {
+
+				}
+			},
+			"Items": {
+				"Broom": {
+
+				},
+				"Torch": {
+
+				},
+				"Meal": {
+
+				},
+				"Mug": {
+
+				},
+				"Furniture": {
+
+				},
+				"Axe": {
+
+				},
+				"Wine Barrel": {
+
+				},
+				"Compass": {
+
+				},
+				"Bottle": {
+
+				},
+				"Knife": {
+
+				},
+				"Saw": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 280
+				}
+			}
+		},
+		"Town Hall": {
+			"Connections": {
+				"Prison": {
+
+				}
+			},
+			"Items": {
+				"Chest": {
+					"Coins": {
+
+					}
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 340
+				}
+			}
+		},
+		"Prison": {
+			"Characters": {
+				"Prison Principal": {
+					"Prison Keys": {
+
+					}
+				},
+				"Prison Principal's Daughter": {
+
+				},
+				"Prisoner": {
+
+				},
+				"Guard": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 360
+				}
+			}
+		},
+		"Field": {
+			"Connections": {
+				"Peasant's Hut": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 0,
+					"y": 280
+				}
+			}
+		}
+	}
+}

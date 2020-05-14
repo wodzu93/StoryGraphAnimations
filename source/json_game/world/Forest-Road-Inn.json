@@ -1,0 +1,91 @@
+{
+	"Locations": {
+		"Forest": {
+			"Characters": {
+				"Hero": {
+					"Items": {
+						"Sword": {
+
+						}
+					},
+					"Attributes": {
+						"Agression": ""
+					}
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": -460,
+					"y": -40
+				}
+			},
+			"Connections": {
+				"Road": {
+
+				}
+			},
+			"Atributes": {
+				"Position": {
+					"x": -250,
+					"y": 259.807617
+				}
+			}
+		},
+		"Road": {
+			"Items": {
+				"Stone": {
+
+				}
+			},
+			"Connections": {
+				"Inn": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": -280,
+					"y": -20
+				}
+			},
+			"Atributes": {
+				"Position": {
+					"x": -250,
+					"y": -259.807617
+				}
+			}
+		},
+		"Inn": {
+			"Attributes": {
+				"Position": {
+					"x": -140,
+					"y": -20
+				}
+			},
+			"Characters": {
+				"Innkeeper": {
+					"Items": {
+						"Bottle": {
+							"Attributes": {
+								"Fullness": "Full"
+							}
+						}
+					}
+				}
+			},
+			"Items": {
+				"Table": {
+					"Attributes": {
+						"Powyłamywane nogi": ""
+					}
+				}
+			},
+			"Atributes": {
+				"Position": {
+					"x": 500,
+					"y": -0
+				}
+			}
+		}
+	}
+}

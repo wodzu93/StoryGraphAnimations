@@ -1,0 +1,231 @@
+[
+	{
+		"Title": "Location change",
+		"Title_Generic": "Generic production",
+		"Id": "00-000",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"any location 1": {
+					"Characters": {
+						"any character": {
+
+						}
+					}
+				},
+				"any location 2": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"any location 1": {
+				},
+				"any location 2": {
+					"Characters": {
+						"any character": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Escape from prison",
+		"Title_Generic": "Location change",
+		"Id": "00-000",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Prison": {
+					"Characters": {
+						"any character": {
+							"Items": {
+								"Lockpick": ""
+							}
+						}
+					}
+				},
+				"Forest": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Prison": {
+
+				},
+				"Forest": {
+					"Characters": {
+						"any character": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Release from prison",
+		"Title_Generic": "Location change",
+		"Id": "00-000",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Prison": {
+					"Characters": {
+						"any character": {
+							"Attributes": {
+								"Acquitted": ""
+							}
+						}
+					}
+				},
+				"any location 1": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Prison": {
+
+				},
+				"any location 1": {
+					"Characters": {
+						"any character": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Escape Hero from prison with Hero Friend's help",
+		"Title_Generic": "Escape from prison",
+		"Id": "00-000",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Prison": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Lockpick": ""
+							}
+						},
+						"Hero Friend": {
+							"Attributes": {
+								"Gratitude": "Hero"
+							}							
+						}							
+					}
+				},
+				"Forest": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Prison": {
+					"Characters": {
+						"Hero Friend": {
+							"Attributes": {
+								"Gratitude": "Hero"
+							}							
+						}							
+					}
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Release hero from prison to the Road",
+		"Title_Generic": "Release from prison",
+		"Id": "00-000",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Prison": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Acquitted": ""
+							}
+						}
+					}
+				},
+				"Road": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Prison": {
+
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Release hero from prison to the Town Hall",
+		"Title_Generic": "Release from prison",
+		"Id": "00-000",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Prison": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Acquitted": ""
+							}
+						}
+					}
+				},
+				"Town Hall": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Prison": {
+
+				},
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+]

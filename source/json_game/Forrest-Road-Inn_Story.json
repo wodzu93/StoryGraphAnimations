@@ -1,0 +1,342 @@
+[
+	{
+		"Title": "Przejscie bohatera z lasu na drogę",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "FRI_001",
+		"Description": "Bohater przechodzi z lasu do drogę.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}								
+				},
+				"Road": {				
+				}				
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {	
+					"Connections": {
+						"Road": {
+						}
+					}					
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+						}
+					},							
+				}				
+			}
+		}
+	},	
+	{
+		"Title": "Przejscie bohatera z drogi do karczmy",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "FRI_002",
+		"Description": "Bohater przechodzi z drogi do karczmy.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+						}
+					},
+					"Connections": {
+						"Inn": {
+						}
+					}								
+				},
+				"Inn": {				
+				}				
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {	
+					"Connections": {
+						"Inn": {
+						}
+					}					
+				},
+				"Inn": {
+					"Characters": {
+						"Hero": {
+						}
+					},							
+				}				
+			}
+		}
+	},		
+	{
+		"Title": "Podniesienie kamienia",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"Id": "FRI_003",
+		"Description": "Bohater podnosi kamień z drogi.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+						}
+					},
+					"Items": {
+						"Stone": {
+						},
+					}					
+				},
+			},
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Stone": {
+								},						
+							}
+						},
+					}					
+				},
+			},
+		},
+	},
+	{
+		"Title": "Upuszczenie przedmiotu",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "FRI_004",
+		"Description": "Bohater upuszcza kamień na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Stone": {
+								},						
+							}
+						},
+					}					
+				},
+			},
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+						}
+					},
+					"Items": {
+						"Stone": {
+						},
+					}					
+				},
+			},
+		}
+	},
+
+
+	{
+		"Title": "Wymiana kamienia na butelkę",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "FRI_005",
+		"Description": "Bohater daje karczmarzowi kamień i dostaje butelkę",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Stone": {
+								}
+							}
+						},
+						"Innkeeper": {
+							"Items": {
+								"Bottle": {
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Bottle": {
+
+								}
+							}
+						},
+						"Innkeeper": {
+							"Items": {							
+								"Stone": {
+
+								}
+							}	
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Oddanie kamienia karczmarzowi za frajer",
+		"Title_Generic": "Wymiana przedmiotu na wiedzę fabularną",
+		"Id": "FRI_006",
+		"Description": "Bohater wręcza karczmarzowi kamień",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Stone": {
+
+								}
+							}
+						},
+						"Innkeeper": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Gratitude": {
+									"From":"Innkeeper",
+									"To":"Hero"
+
+								}
+							}
+						},
+						"Innkeeper": {
+							"Items": {
+								"Stone": {
+
+								}
+							},
+							"Narration": {
+								"Gratitude": {
+									"From":"Innkeeper",
+									"To":"Hero"
+
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Podparcie stołu kamieniem",
+		"Title_Generic": "Przejęcie przedmiotu za pomocą atrybutu",
+		"Id": "FRI_007",
+		"Description": "Stół zostaje podparty kamieniem.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Items": {
+						"Table": {
+							"Attributes": {
+								"Broken leg": ""
+							}
+						}
+						},
+					"Characters": {						
+						"Hero": {
+							"Items": {
+								"Stone": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Items": {
+						"Table": {
+							"Items": {
+								"Stone": {
+
+								}
+							}
+						}
+					},					
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Upicie się butelką wina",
+		"Title_Generic": "Przekształcenie przedmiotu w atrybut właściciela",
+		"Id": "FRI_008",
+		"Description": "Bohater wypija butelke wina i sie nim upija",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Bottle": {
+									"Attributes": {
+										"Fulness": "Full"
+									}
+								}
+							}							
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Drunken": ""
+							},
+							"Items": {
+								"Bottle": {
+									"Attributes": {
+										"Fulness": "Empty"
+									}
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+	},
+	]

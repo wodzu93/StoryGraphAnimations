@@ -1,0 +1,911 @@
+[
+	{
+		"Title": "Kupno fotela od pospólstwa",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "04-001",
+		"Description": "Bohater kupuje fotel od mieszkańców wioski.",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=100"
+									}
+								}
+							}
+						},
+						"People": {
+							"Items": {
+								"Armchair": {
+									"Attributes": {
+										"Value": "100"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "-100"
+									}
+								},
+								"Armchair": {
+									"Attributes": {
+										"Value": "100"
+									}
+								}
+							}
+						},
+						"People": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+100"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie informacji od Karczmarza za wdzięczność",
+		"Title_Generic": "Przekształcenie wiedzy fabularnej w inną wiedzę fabularną",
+		"Id": "04-002",
+		"Description": "Bohater wykorzystuje wdzięcznośc, którą czuje do niego karczmarz i wycygania od niego informację. Karczmarz przestaje być wdzięczny.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Gratitude": {
+									"From":"Innkeeper",
+									"To":"Hero"
+								}	
+							}
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Information": {
+
+								},
+								"Gratitude": {
+									"From":"Innkeeper",
+									"To":"Hero"
+								}								
+							},
+							"Attributes": {
+
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kupno informacji od Karczmarza",
+		"Title_Generic": "Wymiana przedmiotu na wiedzę fabularną",
+		"Id": "04-003",
+		"Description": "Bohater płaci karczmarzowi za podzielenie się informacją.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=100",
+									}
+								}
+							}
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Information": {
+									"Attributes": {
+										"Value": "100"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Information": {
+
+								}
+							},
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "-100",
+									}
+								}
+							}							
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Information": {
+
+								}
+							},
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+100",
+									}
+								}
+							}							
+						}						
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Napad na kupca (śmierć atakującego)",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "04-004",
+		"Description": "Bohater atakuje kupca, który ma zioła uzdrawiajace i ginie. Bez sensu. Wystarczyłaby po prostu produkcja walki.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Napad na kupca (śmierć atakowanego)",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "04-005",
+		"Description": "Bohater napada na kupca, który posiada ziołą uzdrawiające i zabija go.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							},
+							"Attributes": {
+								"Wanted": ""
+							}
+						},
+						"Merchant": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Napad na kupca (ucieczka atakowanego)",
+		"Title_Generic": "Walka (ucieczka atakowanego)",
+		"Id": "04-006",
+		"Description": "Bohater atakuje kupca. Kupiec gubi wszystkie posiadane przedmioty (transformacja osadzenia) i zmienia lokację na sąsiednią.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							}
+						}
+					},
+					"Connections": {
+						"Location1": {
+						}
+					}						
+				},
+				"Location1": {
+				}				
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+
+					},
+					"Items": {
+						"Herbs": {
+							"Attributes": {
+								"Healing": ""
+							}
+						}
+					},					
+					"Connections": {
+						"Location1": {
+						}
+					}					
+				},
+				"Location1": {
+					"Characters": {
+						"Merchant": {
+							"Attributes": {
+								"Hate for Hero": ""
+							}
+						}
+					},										
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Rozmowa z kupcem",
+		"Title_Generic": "Pozyskanie wiedzy narracyjnej",
+		"Id": "04-007",
+		"Description": "Bohater zagaduje kupca i dowiaduje się czegoś.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Merchant": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						},
+						"Merchant": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Uśpienie pospólstwa w wiosce eliksirem",
+		"Title_Generic": "Wymiana przedmiotu na atrybut",
+		"Id": "04-008",
+		"Description": "Bohater znajduje się w wiosce i usypia jej mieszkańców eliksirem.",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"People": {
+						},
+						"Hero": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Hypnotic": ""
+									}
+								}
+							}
+						},
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"People": {
+							"Attributes": {
+								"Sleeping": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Uśpienie pospólstwa w wiosce ziołami - Nieudane",
+		"Title_Generic": "Upuszczenie przedmiotu",
+		"Id": "04-009",
+		"Description": "Bohater znajduje się w wiosce i usiłuje uśpić mieszkańców ziołami, ale nie udale mu się to. Porzucone ziołą walają się po ziemi a za bohaterem zostaje wystawiony list gończy.",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"People": {
+						},
+						"Hero": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Hypnotic": ""
+									}
+								}
+							}
+						},
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Wanted": ""
+							}
+						}
+					},
+					"Items": {
+						"Herbs": {
+							"Attributes": {
+								"Hypnotic": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Uśpienie pospólstwa w wiosce ziołami - Udane",
+		"Title_Generic": "Wymiana przedmiotu na atrybut",
+		"Id": "04-010",
+		"Description": "Wymiana przedmiotu na atrybut",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"People": {
+						},
+						"Hero": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Hypnotic": ""
+									}
+								}
+							}
+						},
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"People": {
+							"Attributes": {
+								"Sleeping": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka z wilkami (śmierć atakowanego)",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "04-011",
+		"Description": "Wilki atakują bohatera, który ginie zagryziony. Wszystkie jego przedmioty lądują w lokacji rozwłóczone przez krwiożercze bestie.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Hero": {
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Agression": "",								
+							}
+						},
+						"Hero": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+					},
+				},
+			}
+		}
+	},
+	{
+		"Title": "Walka z wilkami (śmierć atakującego)",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "04-012",
+		"Description": "Wilki atakują bohatera, który jednak ma miecz i zabija wilki.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Hero": {
+							"Items": {
+								"Sword": ""
+							}							
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Hero": {
+							"Items": {
+								"Sword": ""
+							}
+						},
+					},
+				},
+			}
+		}
+	},
+	{
+		"Title": "Walka (ucieczka atakowanego)",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "04-013",
+		"Description": "Bohater rzuca się do ucieczki przed krwiożerczymi wilkami i udaje mu się zgubić pogoń.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Hero": {
+						}
+					},
+					"Connections": {
+						"Location2": {
+						}
+					}						
+				},
+				"Location2": {
+	
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+					},
+					"Connections": {
+						"Location2": {
+						}
+					}						
+				},
+				"Location2": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Hate for Wolf": ""
+							}
+						}
+					},				
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Obdarcie wilka ze skóry",
+		"Title_Generic": "Przekształcenie martwej postaci w przedmiot",
+		"Id": "04-014",
+		"Description": "Bohater za pomocą noża obdziera wilka ze skóry i bierze ją.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+						},
+						"Wolf": {
+							"Attributes": {
+								"Dead":"" 
+							},							
+						}							
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Wolf's skin":"" 
+							},								
+						},					
+					},
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Wymiana fotela za zioła uzdrawiające",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "04-015",
+		"Description": "Bohater spotyka kupca na targu i wymienia fotel na zioła uzdrawiające.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							}
+						},
+						"Hero": {
+							"Items": {
+								"Armchair": {
+									"Attributes": {
+
+									}
+								}
+							}
+						}						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Merchant": {
+							"Items": {
+								"Armchair": {
+
+								}
+							}
+						},
+						"Hero": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							}
+						}						
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zebranie ziół",
+		"Title_Generic": "Podniesienie obiektu",
+		"Id": "04-016",
+		"Description": "Bohater zbiera zioła rosnące w lesie, mające działanie nasenne.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Herbs": {
+							"Attributes": {
+								"Hypnotic":""
+							}
+						}
+					}					
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Hypnotic":""
+									}
+								}
+							}					
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kradzież fotela",
+		"Title_Generic": "Kradzież przedmiotu z lokacji",
+		"Id": "04-017",
+		"Description": "Bohater korzysta z tego, że mieszkańcy wioski leżą uśpieni i kradnie fotel. Zrobić coś z atrybutem „Alive”",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Attributes": {
+						"Alive inside":"1" 
+					},
+					"Characters": {
+						"Hero": {
+							}
+					},
+					"Items": {
+						"Armchair": {
+							}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Attributes": {
+						"Alive inside":"1" 
+					},
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Wanted":"" 
+							},							
+							"Items": {
+								"Armchair": {
+								}							
+							}
+						},
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kupno eliksiru nasennego",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "04-018",
+		"Description": "Bohater kupuje od czarodzieja eliksir za ciężko zarobione pieniądze.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=45"
+									}
+								}
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Hypnotic": "",
+										"Value":"45"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "-45"
+									}
+								},								
+								"Elixir": {
+									"Attributes": {
+										"Hypnotic": "",
+										"Value":"45"										
+									}
+								}
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+45"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+]

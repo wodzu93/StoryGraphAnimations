@@ -1,0 +1,169 @@
+[
+	{
+		"Title": "Zmiana lokalizacji droga - pastwisko",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-003",
+		"Description": "Bohater przechodzi z drogi na pastwisko.",
+		"L_Side": {
+			"Locations": {
+				"Pasture": {
+
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Pasture": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+					"Connections": {
+						"Pasture": {
+						}
+					}						
+				}
+			}
+		}
+	},
+	{
+		"Title": "Podniesienie kamienia",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"Id": "00-004",
+		"Description": "Bohater podnosi kamień",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Items": {
+						"Stone": {
+						}
+					},
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Items": {
+					},
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Stone": {
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zła Zmiana lokalizacji droga - pastwisko",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-003",
+		"Description": "Bohater przechodzi z drogi na pastwisko.",
+		"L_Side": {
+			"Locations": {
+				"Pasture": {
+					"Connections": {
+						"Road": {
+						}
+					}	
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Pasture": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+					"Connections": {
+						"Pasture": {
+						}
+					}						
+				}
+			}
+		}
+	},
+	{
+		"Title": "Podniesienie kamienia",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"Id": "00-004",
+		"Description": "Bohater podnosi kamień",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Items": {
+						"Stone": {
+						}
+					},
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Items": {
+					},
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Stone": {
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+]

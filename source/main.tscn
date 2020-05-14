@@ -1,0 +1,327 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://scenes/file_selector.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/EventLog.gd" type="Script" id=3]
+[ext_resource path="res://resources/editor_theme.tres" type="Theme" id=4]
+[ext_resource path="res://resources/box_yellow.tres" type="StyleBox" id=5]
+
+[node name="main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 4 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSplit" type="VSplitContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSplit" type="HSplitContainer" parent="VSplit"]
+margin_right = 1600.0
+margin_bottom = 447.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LPanel" type="MarginContainer" parent="VSplit/HSplit"]
+margin_right = 797.0
+margin_bottom = 447.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HSplit" type="HSplitContainer" parent="VSplit/HSplit/LPanel"]
+margin_right = 797.0
+margin_bottom = 447.0
+
+[node name="GraphLeft" type="GraphEdit" parent="VSplit/HSplit/LPanel/HSplit"]
+margin_right = 791.0
+margin_bottom = 447.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+scroll_offset = Vector2( -200, -55 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Label" parent="VSplit/HSplit/LPanel/HSplit/GraphLeft"]
+visible = false
+margin_left = 20.0
+margin_top = 35.0
+margin_right = 1580.0
+margin_bottom = 52.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GraphNode" type="GraphNode" parent="VSplit/HSplit/LPanel/HSplit/GraphLeft"]
+margin_left = 200.0
+margin_top = 55.0
+margin_right = 284.0
+margin_bottom = 150.0
+mouse_filter = 1
+custom_styles/frame = ExtResource( 5 )
+title = "Ololo"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VSplit/HSplit/LPanel/HSplit/GraphLeft/GraphNode"]
+margin_left = 10.0
+margin_top = 22.0
+margin_right = 74.0
+margin_bottom = 39.0
+text = "ha ha ha"
+
+[node name="TextEdit" type="TextEdit" parent="VSplit/HSplit/LPanel/HSplit"]
+margin_left = 797.0
+margin_right = 797.0
+margin_bottom = 447.0
+smooth_scrolling = true
+caret_block_mode = true
+caret_blink = true
+
+[node name="RPanel" type="MarginContainer" parent="VSplit/HSplit"]
+margin_left = 803.0
+margin_right = 1600.0
+margin_bottom = 447.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HSplit" type="HSplitContainer" parent="VSplit/HSplit/RPanel"]
+margin_right = 797.0
+margin_bottom = 447.0
+
+[node name="GraphRight" type="GraphEdit" parent="VSplit/HSplit/RPanel/HSplit"]
+margin_right = 791.0
+margin_bottom = 447.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+scroll_offset = Vector2( -200, -55 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Label" parent="VSplit/HSplit/RPanel/HSplit/GraphRight"]
+margin_left = 214.0
+margin_top = 11.0
+margin_right = 342.0
+margin_bottom = 28.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Production Title"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="VSplit/HSplit/RPanel/HSplit"]
+margin_left = 797.0
+margin_right = 797.0
+margin_bottom = 447.0
+smooth_scrolling = true
+caret_block_mode = true
+caret_blink = true
+
+[node name="HBox" type="HBoxContainer" parent="VSplit"]
+margin_top = 453.0
+margin_right = 1600.0
+margin_bottom = 900.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="game_graph" type="GraphEdit" parent="VSplit/HBox"]
+margin_right = 1600.0
+margin_bottom = 447.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Label" parent="VSplit/HBox/game_graph"]
+margin_left = 16.0
+margin_top = 51.0
+margin_right = 486.0
+margin_bottom = 65.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vertex_view" type="GraphEdit" parent="VSplit/HBox"]
+visible = false
+margin_left = 1068.0
+margin_right = 1600.0
+margin_bottom = 447.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+scroll_offset = Vector2( -340, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="GUI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckButton" type="CheckButton" parent="GUI/Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -132.0
+margin_top = -57.0
+margin_right = -16.0
+margin_bottom = -40.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme = ExtResource( 4 )
+text = "Keep Log "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="event_log" type="Label" parent="GUI/Control"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 30.0
+margin_top = -900.0
+margin_right = 1630.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+valign = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Timer" type="Timer" parent="GUI/Control/event_log"]
+wait_time = 3.0
+
+[node name="previous" type="Button" parent="GUI/Control"]
+margin_left = 220.0
+margin_top = 10.0
+margin_right = 250.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 30, 20 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "<"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="apply" type="Button" parent="GUI/Control"]
+margin_left = 258.0
+margin_top = 10.0
+margin_right = 318.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 60, 20 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Apply"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="next" type="Button" parent="GUI/Control"]
+margin_left = 326.0
+margin_top = 10.0
+margin_right = 356.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 30, 20 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = ">"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="actions_selector" parent="GUI/Control" instance=ExtResource( 2 )]
+margin_left = 16.0
+margin_top = 32.0
+margin_right = 216.0
+margin_bottom = 52.0
+rootPath = "res://json_game"
+
+[node name="world_selector" parent="GUI/Control" instance=ExtResource( 2 )]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -216.0
+margin_top = -36.0
+margin_right = -16.0
+margin_bottom = -16.0
+grow_horizontal = 0
+rootPath = "res://json_game/world"
+
+[node name="save_world" type="Button" parent="GUI/Control/world_selector"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -56.0
+margin_top = -10.0
+margin_right = -8.0
+margin_bottom = 10.0
+text = "Save"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="GUI/Control/world_selector"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -446.0
+margin_right = -263.0
+margin_bottom = 20.0
+text = "save_file_name"
+[connection signal="scroll_offset_changed" from="VSplit/HSplit/LPanel/HSplit/GraphLeft" to="." method="_on_GraphEditLeft_scroll_offset_changed"]
+[connection signal="scroll_offset_changed" from="VSplit/HSplit/RPanel/HSplit/GraphRight" to="." method="_on_GraphEditRight_scroll_offset_changed"]
+[connection signal="gui_input" from="VSplit/HBox/game_graph" to="." method="_on_game_graph_gui_input"]
+[connection signal="node_selected" from="VSplit/HBox/game_graph" to="." method="_on_game_graph_node_selected"]
+[connection signal="toggled" from="GUI/Control/CheckButton" to="GUI/Control/event_log" method="_on_CheckButton_toggled"]
+[connection signal="timeout" from="GUI/Control/event_log/Timer" to="GUI/Control/event_log" method="_on_Timer_timeout"]
+[connection signal="pressed" from="GUI/Control/previous" to="." method="_on_previous_pressed"]
+[connection signal="pressed" from="GUI/Control/apply" to="." method="_on_apply_pressed"]
+[connection signal="pressed" from="GUI/Control/next" to="." method="_on_next_pressed"]
+[connection signal="item_selected" from="GUI/Control/actions_selector" to="." method="_on_actions_selector_item_selected"]
+[connection signal="item_selected" from="GUI/Control/world_selector" to="." method="_on_world_selector_item_selected"]
+[connection signal="pressed" from="GUI/Control/world_selector/save_world" to="." method="_on_save_world_pressed"]

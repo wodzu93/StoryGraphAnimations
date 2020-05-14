@@ -1,0 +1,1141 @@
+[
+	{
+		"Title": "Wyrzucenie awanturnika z karczmy",
+		"Title_Generic": "Walka (ucieczka atakowanego)",
+		"Id": "00-000",
+		"Description": "W karczmie awanturuje się pijak. Wzbudza to irytację bohatera, który po ojcowsku daje mu w ucho i zaskoczony pijak wybiega na zewnątrz. Karczmarz wzdycha z ulgą i obdarza bohatera wdzięcznym spojrzeniem.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Innkeeper": {
+
+						},
+						"Drunkard": {
+							"Attributes": {
+								"Troublemaker": ""
+							}
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+					"Connections": {
+						"Inn": {
+						}
+					}	
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Innkeeper's gratitude": ""
+							}
+						},
+						"Innkeeper": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+					"Characters": {
+						"Drunkard": {
+
+						}
+					},
+					"Connections": {
+						"Inn": {
+						}
+					}						
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie trucizny",
+		"Title_Generic": "Przekształcenie atrybutu w przedmiot",
+		"Id": "00-001",
+		"Description": "Bohater i karczmarz znajdują się w karczmie. W dowód wdzięczności karczmarz przekazuje bohaterowi truciznę, co wyrównuje rachunki.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Innkeeper's gratitude": ""
+							}
+						},
+						"Innkeeper": {
+							"Items": {
+								"Poison": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Poison": {
+
+								}
+							}
+						},
+						"Innkeeper": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji karczma - droga",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-002",
+		"Description": "Bohater przechodzi z karczmy na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+					"Connections": {
+						"Inn": {
+						}
+					}						
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Connections": {
+						"Road": {
+						}
+					}	
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Inn": {
+						}
+					}						
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji droga - pastwisko",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-003",
+		"Description": "Bohater przechodzi z drogi na pastwisko.",
+		"L_Side": {
+			"Locations": {
+				"Pasture": {
+					"Connections": {
+						"Road": {
+						}
+					}	
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Pasture": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+					"Connections": {
+						"Pasture": {
+						}
+					}						
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji pastwisko - wioska",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-004",
+		"Description": "Bohater przechodzi z pastwiska do wioski.",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Connections": {
+						"Pasture": {
+						}
+					}	
+				},
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Village": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Pasture": {
+						}
+					}						
+				},
+				"Pasture": {
+					"Connections": {
+						"Village": {
+						}
+					}	
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zatrucie wody",
+		"Title_Generic": "Przekształcenie przedmiotu w atrybut innego przedmiotu",
+		"Id": "00-005",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Poison": {
+
+								}
+							}
+						}
+					},
+					"Items": {
+						"Well": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Well": {
+							"Attributes": {
+								"Poisoned": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji czarodzieja po zatruciu studni",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-006",
+		"Description": "Studnia w wiosce jest zatruta. Czarodziej wezwany przeczuciem pojawia się w wiosce, żeby uzdatnić studnię. Lokacje konkretne, ale z teleportacją. Da się?",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Items": {
+						"Well": {
+							"Attributes": {
+								"Poisoned": "x"
+							}
+						}
+					}
+				},
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+								}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Wizard": {
+							"Narration": {
+								"Poisoned well treatment": {
+									"Attributes": {
+										"Work days": "x"
+									}
+								}
+							}
+						}
+					},
+					"Items": {
+						"Well": {
+							"Attributes": {
+								"Poisoned": "x"
+							}
+						}
+					}
+				},
+				"Wizard's Hut": {
+
+				}
+			}
+		}
+	},
+	{
+		"Title": "Uzdatnianie studni",
+		"Title_Generic": "Imperatyw fabularny zmiany atrybutu obiektu",
+		"Id": "00-007",
+		"Description": "Chodzi o to, żeby czarodziej 3 dni był zajęty uzdatnianiem studni. Nie do końca przemyślane, czy potrzebna jest produkcja „Uzdatnianie studni - zakończenie”.",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Items": {
+						"Well": {
+							"Attributes": {
+								"Poisoned": "x"
+							}
+						}
+					},
+					"Characters": {
+						"Wizard": {
+							"Narration": {
+								"Poisoned well treatment": {
+									"Attributes": {
+										"Work days": "x"										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Items": {
+						"Well": {
+							"Attributes": {
+								"Poisoned": "x-1"
+							}
+						}
+					},
+					"Characters": {
+						"Wizard": {
+							"Narration": {
+								"Poisoned well treatment": {
+									"Attributes": {
+										"Work days": "x-1"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Uzdatnianie studni – zakończenie",
+		"Title_Generic": "Imperatyw fabularny zmiany atrybutu obiektu",
+		"Id": "00-008",
+		"Description": "Chodzi o to, żeby zakończyć uzdatnianie studni przez czarownika a nie pójść w ujemne uzdatnianie studni. Ale moze lepeij to zrobić warunkami stosowania?. Nie do końca przemyślane.",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Items": {
+						"Well": {
+							"Attributes": {
+								"Poisoned": "0"
+							}
+						}
+					},
+					"Characters": {
+						"Wizard": {
+							"Narration": {
+								"Poisoned well": {
+									"Attributes": {
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Items": {
+						"Well": {
+							"Attributes": {
+							}
+						}
+					},
+					"Characters": {
+						"Wizard": {
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji wioska - pastwisko",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-009",
+		"Description": "Bohater przechodzi z wioski na pastwisko",
+		"L_Side": {
+			"Locations": {
+				"Pasture": {
+					"Connections": {
+						"Village": {
+						}
+					}	
+				},
+				"Village": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Pasture": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Village": {
+						}
+					}						
+				},
+				"Village": {
+					"Connections": {
+						"Pasture": {
+						}
+					}	
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji pastwisko - droga",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-010",
+		"Description": "Bohater przechodzi z pastwiska na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": {
+						"Pasture": {
+						}
+					}	
+				},
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Pasture": {
+						}
+					}						
+				},
+				"Pasture": {
+					"Connections": {
+						"Road": {
+						}
+					}	
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji droga - las",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-011",
+		"Description": "Bohater przechodzi z drogi do lasu.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Connections": {
+						"Road": {
+						}
+					}	
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+					"Connections": {
+						"Forest": {
+						}
+					}	
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji las - chata czarodzieja",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-012",
+		"Description": "Bohater przechodzi z lasu do chaty czarodzieja.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Connections": {
+						"Forest": {
+						}
+					}	
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}						
+				},
+				"Forest": {
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}	
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie eliksiru - kradzież",
+		"Title_Generic": "Kradzież przedmiotu z lokacji",
+		"Id": "00-013",
+		"Description": "Bohater znajduje się sam w chacie czarodzieja. Korzysta z okazji i bierze znajdujący się tam eliksir. Od tej pory jest na liście przestępców.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Attributes": {
+						"Alive inside":"1" 
+					},					
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Elixir": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Elixir": {
+
+								}
+							},
+							"Attributes": {
+								"Wanted": ""
+							}
+						}
+					},
+					"Attributes": {
+						"Alive inside":"1" 
+					},						
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie eliksiru - kupno",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "00-014",
+		"Description": "Bohater spotyka się w chacie z czarodziejem i kupuje eliksir za 10 monet.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Value":"10"
+									}	
+								}
+							}
+						},
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount":">=10"
+									}	
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount":"+10"
+									}	
+								}
+							}
+						},
+						"Hero": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Amount":">=10"
+									}
+								},
+								"Coins": {
+									"Attributes": {
+										"Amount":"-10"
+									}	
+								}							
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Napad na czarodzieja (zabicie czarodzieja)",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "00-015",
+		"Description": "Bohater spotyka czarodzieja w chacie i zabija go.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+
+						},
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							},
+							"Attributes": {
+								"Agression": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							},
+							"Attributes": {
+								"Wanted": ""
+							}	
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Napad na czarodzieja (zabicie bohatera)",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "00-016",
+		"Description": "Bohater spotyka czarodzieja w chacie, atakuje go i ginie w walce.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+
+						},
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							},
+							"Attributes": {
+								"Agression": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+
+						},
+						"Hero": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					},
+					"Items": {
+						"Sword": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji chata czarodzieja - las",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-018",
+		"Description": "Bohater przechodzi z chaty czarodzieja do lasu.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}	
+				},
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}						
+				},
+				"Wizard's Hut": {
+					"Connections": {
+						"Forest": {
+						}
+					}	
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji las - legowisko smoka",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "00-019",
+		"Description": "Bohater przechodzi z lasu do Legowiska smoka.",
+		"L_Side": {
+			"Locations": {
+				"Dragon's lair": {
+					"Connections": {
+						"Forest": {
+						}
+					}	
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Dragon's lair": {
+						}
+					}						
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Dragon's lair": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}						
+				},
+				"Forest": {
+					"Connections": {
+						"Dragon's lair": {
+						}
+					}	
+				}
+			}
+		}
+	},
+	{
+		"Title": "Wypicie eliksiru",
+		"Title_Generic": "Przekształcenie przedmiotu w atrybut właściciela",
+		"Id": "00-020",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Usage": "Energizing"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Strength": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Napad na smoka z eliksirem - śmierć smoka",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "00-021",
+		"Description": "Bohater podniecony eliksirem rzuca się na smoka i pokonuje go. Smok ginie a jego zab ląduje w ściółce.",
+		"L_Side": {
+			"Locations": {
+				"Dragon's lair": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							},
+							"Attributes": {
+								"Agression": "",
+								"Strength": ""
+							}
+						},
+						"Dragon": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Dragon's lair": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							}
+						},
+						"Dragon": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					},
+					"Items": {
+						"Dragon's Tooth": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Napad na smoka - śmierć bohatera",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "00-023",
+		"Description": "Bohater rzuca się na smoka i ginie rozszarpany.",
+		"L_Side": {
+			"Locations": {
+				"Dragon's lair": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							},
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Dragon": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Dragon's lair": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Dragon": {
+
+						}
+					},
+					"Items": {
+						"Sword": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie smoczego zęba",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"Id": "00-024",
+		"Description": "Bohater znajduje się w leżu smoka po ubiciu potwora. Zauważa na ziemi smoczy zab i podnosi go.",
+		"L_Side": {
+			"Locations": {
+				"Dragon's lair": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							}
+						},
+						"Dragon": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					},
+					"Items": {
+						"Dragon's Tooth": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Dragon's lair": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Dragon's Tooth": {
+
+								},
+								"Sword": {
+
+								}
+							}
+						},
+						"Dragon": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+]

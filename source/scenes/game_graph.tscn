@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/game_graph.gd" type="Script" id=1]
+
+[node name="game_graph" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GraphEdit" type="GraphEdit" parent="HBox"]
+margin_right = 1024.0
+margin_bottom = 600.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+snap_distance = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Previous" type="Button" parent="HBox/GraphEdit"]
+margin_left = 231.0
+margin_right = 310.0
+margin_bottom = 40.0
+text = "Previous"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="Button" parent="HBox/GraphEdit"]
+margin_left = 324.0
+margin_right = 403.0
+margin_bottom = 40.0
+text = "Next"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Home" type="Button" parent="HBox/GraphEdit"]
+margin_left = 417.0
+margin_right = 496.0
+margin_bottom = 40.0
+text = "Home"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="HBox/GraphEdit"]
+margin_left = 20.0
+margin_top = 51.0
+margin_right = 490.0
+margin_bottom = 65.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="connection_request" from="HBox/GraphEdit" to="." method="_on_GraphEdit_connection_request"]
+[connection signal="button_up" from="HBox/GraphEdit/Previous" to="." method="load_production_prev"]
+[connection signal="button_up" from="HBox/GraphEdit/Next" to="." method="load_production_next"]
+[connection signal="pressed" from="HBox/GraphEdit/Home" to="." method="_on_Home_pressed"]

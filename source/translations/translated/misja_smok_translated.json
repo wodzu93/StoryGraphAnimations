@@ -1,0 +1,1034 @@
+[
+	{
+		"Title": "Wyrzucenie awanturnika z karczmy",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "agresja",
+					"Innkeeper": "",
+					"People": "zawadiaka"
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Inn": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Inn": "Road",
+				"Innkeeper": "Inn",
+				"People": "Inn"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "wdzięczność karczmarza",
+					"Innkeeper": "",
+					"People": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Inn": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Inn": "Road",
+				"Innkeeper": "Inn",
+				"People": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie trucizny",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "wdzięczność karczmarza",
+					"Innkeeper": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Poison": ""
+				},
+				"Locations": {
+					"Inn": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Innkeeper": "Inn",
+				"Poison": "Innkeeper"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Innkeeper": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Poison": ""
+				},
+				"Locations": {
+					"Inn": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Innkeeper": "Inn",
+				"Poison": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji karczma - droga",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Inn": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Road": "Inn",
+				"Hero": "Inn"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Inn": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Road": "Inn",
+				"Hero": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji droga - pastwisko",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Pasture": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Pasture": "Road"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Pasture": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Pasture": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji pastwisko - wioska",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Village": "",
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Village": "Pasture",
+				"Hero": "Pasture"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Village": "",
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Village": "Pasture",
+				"Hero": "Village"
+			}
+		}
+	},
+	{
+		"Title": "Zatrucie wody",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Village": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Poison": "",
+					"Studnia": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Village",
+				"Studnia": "Village",
+				"Poison": "Hero"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Village": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Studnia": "zatruta"
+				}
+			},
+			"Edges": {
+				"Hero": "Village",
+				"Studnia": "Village"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji czarodzieja",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Village": "",
+					"Dowolna lokacja": ""
+				},
+				"Characters": {
+					"Wizard": ""
+				},
+				"Items": {
+					"Studnia": "zatruta"
+				},
+				"Narration": {
+					"Zatrucie studni": "3 dni pracy"
+				}
+			},
+			"Edges": {
+				"Village": "Dowolna lokacja",
+				"Wizard": "Dowolna lokacja",
+				"Studnia": "Village",
+				"Zatrucie studni": "Wizard"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Wizard": ""
+				},
+				"Narration": {
+					"Zatrucie studni": "3 dni pracy"
+				},
+				"Items": {
+					"Studnia": "zatruta"
+				},
+				"Locations": {
+					"Village": "",
+					"Dowolna lokacja": ""
+				}
+			},
+			"Edges": {
+				"Village": "Dowolna lokacja",
+				"Wizard": "Village",
+				"Studnia": "Village",
+				"Zatrucie studni": "Wizard"
+			}
+		}
+	},
+	{
+		"Title": "Uzdatnianie studni",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Village": ""
+				},
+				"Characters": {
+					"Wizard": ""
+				},
+				"Narration": {
+					"Zatrucie studni": "x dni pracy"
+				},
+				"Items": {
+					"Studnia": "zatruta"
+				}
+			},
+			"Edges": {
+				"Studnia": "Village",
+				"Wizard": "Village",
+				"Zatrucie studni": "Wizard"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Wizard": ""
+				},
+				"Narration": {
+					"Zatrucie studni": "x-1 dni pracy"
+				},
+				"Items": {
+					"Studnia": "zatruta"
+				},
+				"Locations": {
+					"Village": ""
+				}
+			},
+			"Edges": {
+				"Studnia": "Village",
+				"Wizard": "Village",
+				"Zatrucie studni": "Wizard"
+			}
+		}
+	},
+	{
+		"Title": "Uzdatnianie studni cd.",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Village": ""
+				},
+				"Characters": {
+					"Wizard": ""
+				},
+				"Narration": {
+					"Zatrucie studni": "1 dzień pracy"
+				},
+				"Items": {
+					"Studnia": "zatruta"
+				}
+			},
+			"Edges": {
+				"Studnia": "Village",
+				"Wizard": "Village",
+				"Zatrucie studni": "Wizard"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Village": ""
+				},
+				"Characters": {
+					"Wizard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Studnia": "zatruta"
+				}
+			},
+			"Edges": {
+				"Studnia": "Village",
+				"Wizard": "Village"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji wioska - pastwisko",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Pasture": "",
+					"Village": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Pasture": "Village",
+				"Hero": "Village"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Pasture": "",
+					"Village": ""
+				}
+			},
+			"Edges": {
+				"Pasture": "Village",
+				"Hero": "Pasture"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji pastwisko - droga",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Road": "Pasture",
+				"Hero": "Pasture"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Road": "Pasture",
+				"Hero": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji droga - las",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Forest": "",
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Forest": "Road",
+				"Hero": "Road"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Forest": "",
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Forest": "Road",
+				"Hero": "Forest"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji las - chata czarodzieja",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": "",
+					"Forest": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Wizard's Hut": "Forest",
+				"Hero": "Forest"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": "",
+					"Forest": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Wizard's Hut": "Forest",
+				"Hero": "Wizard's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie eliksiru - kradzież",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Elixir": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Wizard's Hut",
+				"Elixir": "Wizard's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "list gończy"
+				},
+				"Narration": {
+					"Poszukiwany": ""
+				},
+				"Items": {
+					"Elixir": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Wizard's Hut",
+				"Poszukiwany": "Hero",
+				"Elixir": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie eliksiru - kupno",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Wizard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Coins": "",
+					"Elixir": ""
+				}
+			},
+			"Edges": {
+				"Wizard": "Wizard's Hut",
+				"Hero": "Wizard's Hut",
+				"Coins": "Hero",
+				"Elixir": "Wizard"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Wizard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Coins": "",
+					"Elixir": ""
+				}
+			},
+			"Edges": {
+				"Wizard": "Wizard's Hut",
+				"Hero": "Wizard's Hut",
+				"Elixir": "Hero",
+				"Coins": "Wizard"
+			}
+		}
+	},
+	{
+		"Title": "Napad na czarodzieja zabicie czarodzieja",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "agresja",
+					"Wizard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": ""
+				}
+			},
+			"Edges": {
+				"Wizard": "Wizard's Hut",
+				"Hero": "Wizard's Hut",
+				"Sword": "Hero"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Wizard": "martwy"
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": ""
+				}
+			},
+			"Edges": {
+				"Wizard": "Wizard's Hut",
+				"Hero": "Wizard's Hut",
+				"Sword": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Napad na czarodzieja zabicie bohatera",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "agresja",
+					"Wizard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": ""
+				}
+			},
+			"Edges": {
+				"Wizard": "Wizard's Hut",
+				"Hero": "Wizard's Hut",
+				"Sword": "Hero"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "martwy",
+					"Wizard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": ""
+				}
+			},
+			"Edges": {
+				"Wizard": "Wizard's Hut",
+				"Hero": "Wizard's Hut",
+				"Sword": "Wizard's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Podniesienie eliksiru",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Wizard": "martwy"
+				},
+				"Narration": "",
+				"Items": {
+					"Elixir": ""
+				}
+			},
+			"Edges": {
+				"Wizard": "Wizard's Hut",
+				"Hero": "Wizard's Hut",
+				"Elixir": "Wizard's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Wizard": "martwy"
+				},
+				"Narration": "",
+				"Items": {
+					"Elixir": ""
+				}
+			},
+			"Edges": {
+				"Wizard": "Wizard's Hut",
+				"Hero": "Wizard's Hut",
+				"Elixir": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji chata czarodzieja - las",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Forest": "",
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Forest": "Wizard's Hut",
+				"Hero": "Wizard's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Forest": "",
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Forest": "Wizard's Hut",
+				"Hero": "Forest"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji las - legowisko smoka",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": "",
+					"Forest": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Legowisko smoka": "Forest",
+				"Hero": "Forest"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": "",
+					"Forest": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Legowisko smoka": "Forest",
+				"Hero": "Legowisko smoka"
+			}
+		}
+	},
+	{
+		"Title": "Wypicie eliksiru",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Dowolna lokacja": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Elixir": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Dowolna lokacja",
+				"Elixir": "Hero"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Dowolna lokacja": ""
+				},
+				"Characters": {
+					"Hero": "siła"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Dowolna lokacja"
+			}
+		}
+	},
+	{
+		"Title": "Napad na smoka z eliksirem - śmierć smoka",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": ""
+				},
+				"Characters": {
+					"Hero": "agresja, siła",
+					"Dragon": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Legowisko smoka",
+				"Dragon": "Legowisko smoka",
+				"Sword": "Hero"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Dragon": "martwy"
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": "",
+					"Dragon's Tooth": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Legowisko smoka",
+				"Dragon": "Legowisko smoka",
+				"Dragon's Tooth": "Legowisko smoka",
+				"Sword": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Napad na smoka - śmierć smoka",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": ""
+				},
+				"Characters": {
+					"Hero": "agresja",
+					"Dragon": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Legowisko smoka",
+				"Dragon": "Legowisko smoka",
+				"Sword": "Hero"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Dragon": "martwy"
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": "",
+					"Dragon's Tooth": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Legowisko smoka",
+				"Dragon": "Legowisko smoka",
+				"Dragon's Tooth": "Legowisko smoka",
+				"Sword": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Napad na smoka - śmierć bohatera",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": ""
+				},
+				"Characters": {
+					"Hero": "agresja",
+					"Dragon": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Legowisko smoka",
+				"Sword": "Hero",
+				"Dragon": "Legowisko smoka"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": ""
+				},
+				"Characters": {
+					"Hero": "martwy",
+					"Dragon": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Legowisko smoka",
+				"Dragon": "Legowisko smoka",
+				"Sword": "Legowisko smoka"
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie smoczego zęba",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Dragon": "martwy"
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": "",
+					"Dragon's Tooth": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Legowisko smoka",
+				"Dragon": "Legowisko smoka",
+				"Dragon's Tooth": "Legowisko smoka",
+				"Sword": "Hero"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Legowisko smoka": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Dragon": "martwy"
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": "",
+					"Dragon's Tooth": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Legowisko smoka",
+				"Dragon": "Legowisko smoka",
+				"Dragon's Tooth": "Hero",
+				"Sword": "Hero"
+			}
+		}
+	}
+]

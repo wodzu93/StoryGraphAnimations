@@ -1,0 +1,1096 @@
+[
+	{
+		"Title": "Zmiana lokacji las-port",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-001",
+		"Description": "Bohater wychodzi z lasu do portu.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Port": {
+						}
+					}					
+				},
+				"Port": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Connections": {
+						"Port": {
+						}
+					}
+				},
+				"Port": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Rozmowa z kapitanem o wejściu na statek",
+		"Title_Generic": "Pozyskanie wiedzy fabularnej",
+		"Id": "05-002",
+		"Description": "Bohater zagaduje kapitana i dowiaduje się, co musi zrobic, żeby móc wejśc na statek.",
+		"L_Side": {
+			"Locations": {
+				"Port": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Captain": {
+							"Narration": {
+								"Zadanie, aby wejść na statek": {
+									"Goal":"Wejść na statek",
+									"Method":"Pozyskanie wspaorcia czarodzieja"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Port": {
+					"Characters": {
+						"Captain": {
+							"Narration": {
+								"Zadanie, aby wejść na statek": {
+									"Goal":"Wejść na statek",
+									"Method":"Pozyskanie wspaorcia czarodzieja"
+								}
+							}
+						},
+						"Hero": {
+							"Narration": {
+								"Zadanie, aby wejść na statek": {
+									"Goal":"Wejść na statek",
+									"Method":"Pozyskanie wspaorcia czarodzieja"
+								}
+							}
+						},						
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji port-las",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-003",
+		"Description": "Bohater idzie z portu do lasu.",
+		"L_Side": {
+			"Locations": {
+				"Port": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}					
+				},
+				"Forest": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Port": {
+					"Connections": {
+						"Forest": {
+						}
+					}
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji las – chata czarodzieja",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-004",
+		"Description": "Bohater wchodzi z lasu do chaty czarodzieja.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}					
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},
+				"Forest": {
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Rozmowa z czarodziejem",
+		"Title_Generic": "Pozyskanie wiedzy fabularnej",
+		"Id": "05-005",
+		"Description": "Bohater przekonuje czarodzieja do pójścia na statek. Dowiaduje się, że musi zdobyć eliksir dla czarodzieja.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Zadanie, aby wejść na statek": {
+									"Goal":"Wejść na statek",
+									"Method":"Pozyskanie wspaorcia czarodzieja"
+								}
+							}
+						},
+						"Wizard": {
+							"Narration": {
+								"Zadanie, skłonić czarodzieja do współpracy": {
+									"Goal":"Czarodziej na statku",
+									"Method":"Zdobycie eliksiru i przyniesienie czarodziejowi."
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Zadanie, aby wejść na statek": {
+									"Goal":"Wejść na statek",
+									"Method":"Pozyskanie wspaorcia czarodzieja"
+								},
+								"Zadanie, skłonić czarodzieja do współpracy": {
+									"Goal":"Czarodziej na statku",
+									"Method":"Zdobycie eliksiru i przyniesienie czarodziejowi."
+								}								
+							}
+						},						
+						"Wizard": {
+							"Narration": {
+								"Zadanie, skłonić czarodzieja do współpracy": {
+									"Goal":"Czarodziej na statku",
+									"Method":"Zdobycie eliksiru i przyniesienie czarodziejowi."
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji chata czarodzieja – las",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-006",
+		"Description": "Bohater wychodzi z chaty czarodzieja do lasu.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}					
+				},
+				"Forest": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Connections": {
+						"Forest": {
+						}
+					}
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji las-droga",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-007",
+		"Description": "Bohater wychodzi z lasu na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}					
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},
+				"Forest": {
+					"Connections": {
+						"Road": {
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji droga-targowisko",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-008",
+		"Description": "Bohater schodzi z drogi na targowisko.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Market": {
+						}
+					}					
+				},
+				"Market": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": {
+						"Market": {
+						}
+					}
+				},
+				"Market": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kupno skóry wilka",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "05-009",
+		"Description": "Bohater kupuje skóre wilka od Kupca na atrgu.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=4"
+									}
+								}
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Wolf's skin": {
+									"Attributes": {
+										"Value": "4"
+									}
+								}
+							}
+						},						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Merchant": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+4"
+									}
+								}
+							}
+						},
+						"Hero": {
+							"Items": {
+								"Wolf's skin": {
+									"Attributes": {
+										"Value": "4"
+									}
+								},
+								"Coins": {
+									"Attributes": {
+										"Amount": "-4"
+									}
+								}								
+							}
+						},							
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Upicie kupca",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "05-010",
+		"Description": "Bohater upija kupca winem, żeby za bezcen zdobyć skóre wilka.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Wino": {
+									"Attributes": {
+										"Amount": "1",
+										"Value": "2"									
+									}
+								}
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Wolf's skin": {
+									"Attributes": {
+										"Value": "4"
+									}
+								}
+							}
+						},				
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Wino": {
+									"Attributes": {
+										"Amount": "0.5",
+										"Value": "1"									
+									}
+								},
+								"Wolf's skin": {
+									"Attributes": {
+										"Value": "4"
+									}
+								}								
+							}
+						},
+						"Merchant": {
+							"Attributes": {
+								"Drunken":""
+							}
+						},				
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji targowisko-droga",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-011",
+		"Description": "Bohater zchodzi z targowiska na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+
+				},
+				"Market": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}					
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},
+				"Market": {
+					"Connections": {
+						"Road": {
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka zbójców z bohaterem (śmierć atakującego)",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "05-012",
+		"Description": "Zbójcy atakują bohatera, ale ma miecz, broni sie i zabija ich.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							}
+						},
+						"Bandit": {
+							"Attributes": {
+								"Agression": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							}
+						},
+						"Bandit": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka zbójców z bohaterem (śmierć atakowanego)",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "05-013",
+		"Description": "Zbójcy atakują bohatera, który ginie na miejscu.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+
+								},
+								"Sword": {
+
+								}
+							}
+						},
+						"Bandit": {
+							"Attributes": {
+								"Agression": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+
+								}
+							},
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Bandit": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka zbójców z bohaterem (ucieczka atakowanego)",
+		"Title_Generic": "Walka (ucieczka atakowanego)",
+		"Id": "05-014",
+		"Description": "Zbójcy atakują bohatera, ale udaje mu się uciec do sąsiedniej lokacji. Wzbiera w nim nienawiść do atakującego.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Bandit": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Hero": {
+						}
+					},
+					"Connections": {
+						"Location2": {
+						}
+					}						
+				},
+				"Location2": {
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Bandit": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+					},
+					"Connections": {
+						"Location2": {
+						}
+					}						
+				},
+				"Location2": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Hate for Bandit": ""
+							}
+						}
+					},					
+				}
+			}
+		}
+	},	
+
+
+	{
+		"Title": "Walka wilka z bohaterem (śmierć atakującego)",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "05-015",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Items": {
+								"Wolf's skin": {
+
+								}
+							},
+							"Attributes": {
+								"Agression": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							}
+						},
+						"Wolf": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zdobycie skóry wilka",
+		"Title_Generic": "Przekształcenie martwej postaci w przedmiot",
+		"Id": "05-016",
+		"Description": "Bohater wyciąga miecz i patroszy wilka. Bierze skórę.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							}
+						},
+						"Wolf": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								},
+								"Wolf's skin": {
+
+								}
+							}
+						},
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka wilka z bohaterem (śmierć atakowanego)",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "05-017",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							}
+						},
+						"Wolf": {
+							"Items": {
+								"Wolf's skin": {
+
+								}
+							},
+							"Attributes": {
+								"Agression": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Wolf": {
+
+						}
+					},
+					"Items": {
+						"Sword": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+
+		{
+		"Title": "Walka wilka z bohaterem (ucieczka atakowanego)",
+		"Title_Generic": "Walka (ucieczka atakowanego)",
+		"Id": "05-018",
+		"Description": "Wilki atakują bohatera, ale udaje mu się uciec do sąsiedniej lokacji. Wzbiera w nim nienawiść do atakującego.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Hero": {
+						}
+					},
+					"Connections": {
+						"Location2": {
+						}
+					}						
+				},
+				"Location2": {
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+					},
+					"Connections": {
+						"Location2": {
+						}
+					}						
+				},
+				"Location2": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Hate for Wolf": ""
+							}
+						}
+					},					
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Przekazanie skóry wilka czarodziejowi​",
+		"Title_Generic": "Wymiana przedmiotu na wiedzę fabularną",
+		"Id": "05-019",
+		"Description": "Bohater przekazuje skórę wilka czarownikowi, czym zaskarbia sobie jego wdzięczność.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Wolf's skin": {
+
+								}
+							}
+						},
+						"Wizard": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Gratitude": {
+									"From":"Wizard",
+									"To":"Hero"
+								}	
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Wolf's skin": {
+
+								}
+							},
+							"Narration": {
+								"Gratitude": {
+									"From":"Wizard",
+									"To":"Hero"
+								}	
+							}							
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Przygotowanie eliksiru ze skóry wilka",
+		"Title_Generic": "Przekształcenie obiektu w obiekt(y)",
+		"Id": "05-020",
+		"Description": "Czarodziej beirze skórę wilka i wygotowuje ją do uzyskania eliksiru.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+							"Items": {
+								"Wolf's skin": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+							"Items": {
+								"Elixir": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z czarodziejem chata czarodzieja – las",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-021",
+		"Description": "Bohater skłania czarodzieja, żeby razem wyszli z chaty.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Wizard": {
+
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}					
+				},
+				"Forest": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Connections": {
+						"Forest": {
+						}
+					}
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Wizard": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z czarodziejem las – port",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-022",
+		"Description": "Bohater skłania czarodzieja, żeby razem poszli z lasu do portu.",
+		"L_Side": {
+			"Locations": {
+				"Port": {
+
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Wizard": {
+
+						}
+					},
+					"Connections": {
+						"Port": {
+						}
+					}					
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Port": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Wizard": {
+
+						}
+					}
+				},
+				"Forest": {
+					"Connections": {
+						"Port": {
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji z czarodziejem port – statek",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "05-023",
+		"Description": "Bohater skłania czarodzieja, żeby razem weszli z portu na statek.",
+		"L_Side": {
+			"Locations": {
+				"Port": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Wizard": {
+
+						}
+					},
+					"Connections": {
+						"Ship": {
+						}
+					}					
+				},
+				"Ship": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Port": {
+					"Connections": {
+						"Ship": {
+						}
+					}
+				},
+				"Ship": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Wizard": {
+
+						}
+					}
+				}
+			}
+		}
+	}
+]

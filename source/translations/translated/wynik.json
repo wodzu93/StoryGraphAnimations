@@ -1,0 +1,603 @@
+[
+	{
+		"Title": "Kupno fotela od pospólstwa",
+		"Title_Generic": "",
+		"Id": "0",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"100": ""
+									}
+								}
+							}
+						},
+						"People": {
+							"Items": {
+								"Armchair": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"100": ""
+									}
+								},
+								"Armchair": {
+
+								}
+							}
+						},
+						"People": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kupno informacji od Karczmarza za wdzięczność",
+		"Title_Generic": "",
+		"Id": "1",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Information": {
+
+								}
+							},
+							"Attributes": {
+								"wdzięczność": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kupno informacji od Karczmarza",
+		"Title_Generic": "",
+		"Id": "2",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Napad na kupca (śmierć atakującego)",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "3",
+		"Description": "Bohater atakuje kupca, który ma zioła uzdrawiajace i ginie. Bez sensu. Wystarczyłaby po prostu produkcja walki.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Napad na kupca (śmierć atakowanego)",
+		"Title_Generic": "",
+		"Id": "4",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Healing": ""
+									}
+								}
+							},
+							"Attributes": {
+								"Wanted": ""
+							}
+						},
+						"Merchant": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Rozmowa z kupcem",
+		"Title_Generic": "Pozyskanie wiedzy narracyjnej",
+		"Id": "5",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Merchant": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						},
+						"Merchant": {
+							"Narration": {
+								"Information": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Uśpienie pospólstwa w wiosce eliksirem",
+		"Title_Generic": "",
+		"Id": "6",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"People": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"People": {
+							"Attributes": {
+								"Uśpiony": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Uśpienie pospólstwa w wiosce ziołami - Nieudane",
+		"Title_Generic": "",
+		"Id": "7",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Warrant": ""
+							}
+						}
+					},
+					"Items": {
+						"Herbs": {
+							"Attributes": {
+								"nasenny, ilość": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Uśpienie pospólstwa w wiosce ziołami - Udane",
+		"Title_Generic": "",
+		"Id": "8",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"People": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"People": {
+							"Attributes": {
+								"Uśpiony": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka z wilkami - Przegrana",
+		"Title_Generic": "",
+		"Id": "9",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Agression": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka z wilkami - Wygrana",
+		"Title_Generic": "",
+		"Id": "10",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Agression": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Wolf": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Wymiana fotela za zioła uzdrawiające",
+		"Title_Generic": "",
+		"Id": "11",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Merchant": {
+							"Items": {
+								"Herbs": {
+									"Attributes": {
+										"Uzdrawiające": ""
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Merchant": {
+							"Items": {
+								"Armchair": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zebranie ziół",
+		"Title_Generic": "",
+		"Id": "12",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kradzież fotela",
+		"Title_Generic": "",
+		"Id": "13",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Village": {
+					"Characters": {
+						"People": {
+							"Attributes": {
+								"Uśpiony": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kupno eliksiru nasennego",
+		"Title_Generic": "",
+		"Id": "14",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"45": ""
+									}
+								}
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Nasenny": ""
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Nasenny": ""
+									}
+								}
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"45": ""
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+]

@@ -1,0 +1,147 @@
+[{ 
+"Title": "A Torch in the Cellar",
+"Title_Generic": "Item Delivery",
+"Description":"W karczmie radosne pospólstwo świętuje. W piwnicy jest ciemno. Leżą tam miotła i butelka. Karczmarz jest w piwnicy. Bohater jest w piwnicy i ma latarkę. Bohater świeci latarką karczmarzowi, który, uszczęśliwiony, rozpływa się we wdzięczności.",
+"L_Side": {
+	"Locations": {
+		"Cellar":{
+			"Attributes":{
+				"Darkness":""
+			},
+			"Characters":{
+				"Hero":{
+					"Items":{
+						"Torch":{
+							"Attributes":{"Is Lit":""}
+						},
+						"Coins":{
+							"Attributes":{"Count":"10"}
+						},
+					}
+				},
+				"Innkeeper":""
+			},
+			"Items":{
+				"Bottle":{
+					"Attributes":{
+						"Broken":""
+					}
+				},
+				"Broom":""
+			},
+			"Narration":{
+				"It is dark":""
+			}
+		},
+		"Inn":{ 
+			"Attributes":"",
+			"Characters":{
+				"People":{
+					"Narration":{
+						"Celebrating":""
+					},
+					"Attributes":{
+						"Happy":""
+					}								
+				},
+				"Hero":{
+					"Attributes":{
+						"Innkeeper's gratitude":""
+					},
+					"Items":{
+						"Stone":"",
+						"Pouch":{
+							"Items":{
+								"Torch":{
+									"Attributes":{
+										"old":"",
+										"extinguished":""
+										}
+								},
+								"Torch2":{
+									"Attributes":{
+										"Is Lit":"",
+										"Timer":"10"
+									}
+								},
+								"Coins":""
+							}
+						}
+					}
+				},	
+				"Innkeeper":{
+					"Attributes":{
+						"Happy":""
+					},
+					"Items":{
+						"Bottle":{
+							"Attributes":{
+								"Broken":""
+							}
+						},
+						"Bottle1":{
+							"Attributes":{
+								"Full":""
+							}
+						},
+						"Bottle2":""
+					}						
+				},
+			},
+			"Items":"",
+			"Narration":{"It is a good day":""}
+		}
+	}
+},
+"R_Side": {
+		"Locations": {
+			"Inn":{ 
+				"Attributes":"",
+				"Characters":{
+					"People":{
+						"Narration":{
+							"Celebrating":""
+						},
+						"Attributes":{
+							"Happy":""
+						}								
+					},
+					"Hero":{
+						"Attributes":{
+							"Innkeeper's gratitude":""
+						},
+						"Items":{
+							"Torch":""
+						}
+					},	
+					"Innkeeper":{
+						"Attributes":{
+							"Happy":""
+						}
+					}
+				},
+				"Items":"",
+				"Narration":""
+			},
+			"Cellar":{
+				"Attributes":{
+					"Darkness":""
+				},
+				"Characters":"",
+				"Items":{
+					"Torch":"", 
+					"Bottle":"", 
+					"Broom":""
+				},
+				"Narration":{
+					"It is dark":""
+				}
+			}
+		},
+		"Connections":{
+			"Inn":"Cellar",
+			"Cellar":"Inn"
+		}
+	}
+}]
+

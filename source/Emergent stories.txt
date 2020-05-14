@@ -1,0 +1,87 @@
+Produkcja podnoszenia noża:
+	{
+		"Title": "Podniesienie noża",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"Id": "07-023",
+		"Description": "Bohater po podniesieniu noża automatycznie staje się zbójcą.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Knife": {
+
+						}
+					}					
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Bandit": {
+							"Items": {
+								"Knife": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Kolacja u chłopa z zakochaniem",
+		"Title_Generic": "Przekształcenie przedmiotu w atrybut innego przedmiotu",
+		"Id": "07-015",
+		"Description": "W czasie kolacji zjedzono baraninę, wino i bohatera.",
+		"L_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Miss": {
+
+						},
+						"Peasant": {
+
+						}
+					},
+					"Items": {
+						"Mutton chop": {
+
+						},
+						"Wine barrel": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {						
+						"Miss": {
+							"Attributes": {
+							}
+						},
+						"Peasant": {
+
+						}
+					},
+					"Items": {
+					}
+				}
+			}
+		}
+	},	

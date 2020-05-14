@@ -1,0 +1,101 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://image/Locations/jaskinia 06/jaskinia 06.png" type="Texture" id=1]
+[ext_resource path="res://image/Items/Eliksir 02/Eliksir-gotowy-pelny.png" type="Texture" id=2]
+[ext_resource path="res://characters/hero.tscn" type="PackedScene" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "change_location"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("hero:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 1.6, 2.6, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 128, 559 ), Vector2( 656, 540 ), Vector2( 656, 540 ), Vector2( 128, 559 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("elixir:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.3, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 760, 520 ), Vector2( 760, 520 ), Vector2( 120, 40 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("elixir:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.3, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.1, 0.1 ), Vector2( 0.1, 0.1 ), Vector2( 0.05, 0.05 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("elixir:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "animation"
+tracks/4/path = NodePath("hero/AnimationPlayer")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"clips": PoolStringArray( "drop_elixir", "get_sword", "turn_right", "walk", "standing", "pick_up", "get_elixir", "turn_left", "walk", "standing" ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.4, 1.7, 1.8, 2.6, 2.7, 2.8, 3.9 )
+}
+
+[node name="cave" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.96, 0.96 )
+texture = ExtResource( 1 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "change_location"
+anims/change_location = SubResource( 1 )
+next/change_location = "change_location_2"
+blend_times = [ "change_location", "change_location_2", 0.5 ]
+
+[node name="elixir" type="Sprite" parent="."]
+position = Vector2( 760, 520 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+
+[node name="hero" parent="." instance=ExtResource( 3 )]
+editor/display_folded = true
+position = Vector2( 209.231, 556.077 )
+
+[node name="stand" parent="hero/state" index="0"]
+visible = false
+
+[node name="walk" parent="hero/state" index="1"]
+visible = true
+position = Vector2( 0, -10 )
+
+[editable path="hero"]

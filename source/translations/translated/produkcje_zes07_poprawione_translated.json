@@ -1,0 +1,1288 @@
+[
+	{
+		"Title": "Ślub z Panną z rozpaczy",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-001",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Miss": "rozpacz",
+					"Official": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": {
+					"Coins": "6"
+				},
+				"Locations": {
+					"Town Hall": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Coins": "Miss",
+				"Miss": "Town Hall",
+				"Official": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "mąż panny",
+					"Miss": "",
+					"Official": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Coins": "6"
+				},
+				"Locations": {
+					"Town Hall": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Coins": "Hero",
+				"Miss": "Town Hall",
+				"Official": "Town Hall"
+			}
+		}
+	},
+	{
+		"Title": "Odejście chłopa",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-002",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "nienawiść do zbójców",
+					"Peasant": "nienawiść do zbójców"
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": "",
+				"Locations": {
+					"Forest": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Forest",
+				"Forest": "Road",
+				"Peasant": "Forest"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "nienawiść do zbójców",
+					"Peasant": "nienawiść do zbójców"
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Forest": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Forest",
+				"Forest": "Road",
+				"Peasant": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Odrzucenie bohatera",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-002",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "List gończy",
+					"Miss": ""
+				},
+				"Narration": {
+					"Poszukiwany": "",
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": "",
+				"Locations": {
+					"Peasant's Hut": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Miss": "Peasant's Hut",
+				"Road": "Peasant's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "List gończy",
+					"Miss": ""
+				},
+				"Narration": {
+					"Poszukiwany": ""
+				},
+				"Items": "",
+				"Locations": {
+					"Peasant's Hut": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Miss": "Peasant's Hut",
+				"Road": "Peasant's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Praca na polu",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-003",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": {
+					"Wykopki": "x dni pracy"
+				},
+				"Items": "",
+				"Locations": {
+					"Field": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Field"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": {
+					"Wykopki": "x-1 dni pracy"
+				},
+				"Items": {
+					"Harvest": ""
+				},
+				"Locations": {
+					"Field": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Harvest"
+			}
+		}
+	},
+	{
+		"Title": "Przekazanie plonu chłopu",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-004",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Peasant": ""
+				},
+				"Narration": {
+					"Wykopki": "0 dni pracy"
+				},
+				"Items": {
+					"Harvest": "",
+					"Coins": "2"
+				},
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Peasant's Hut": "Peasant",
+				"Coins": "Peasant"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Coins": "2",
+					"Harvest": ""
+				},
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Peasant's Hut": "Peasant",
+				"Peasant": "Harvest"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Droga - Chata chłopa",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-005",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Road": "",
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Peasant's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Road": "",
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Road": "Peasant's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Las - Droga",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-006",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Road": "",
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Forest",
+				"Road": "Forest"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Road": "",
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Forest"
+			}
+		}
+	},
+	{
+		"Title": "Podniesienie noża",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-007",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Knife"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Knife"
+			}
+		}
+	},
+	{
+		"Title": "Ucieczka do lasu",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-008",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Bandit": "agresja",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Road": "",
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Bandit": "Road",
+				"Forest": "Road",
+				"Road": "Peasant"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "nienawiść do zbójców",
+					"Bandit": "",
+					"Peasant": "nienawiść do zbójców"
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Road": "",
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Bandit": "Road",
+				"Road": "Forest",
+				"Forest": "Peasant"
+			}
+		}
+	},
+	{
+		"Title": "Kupno eliksiru",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-009",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Wizard": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": {
+					"Coins": "3",
+					"Herbs": ""
+				},
+				"Locations": {
+					"Wizard's Hut": ""
+				}
+			},
+			"Edges": {
+				"Pomysł na wzbogacenie się": "Hero",
+				"Hero": "Herbs",
+				"Wizard": "Wizard's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Wizard": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": {
+					"Elixir": ""
+				},
+				"Locations": {
+					"Wizard's Hut": ""
+				}
+			},
+			"Edges": {
+				"Pomysł na wzbogacenie się": "Hero",
+				"Hero": "Elixir",
+				"Wizard": "Wizard's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Zebranie ziół",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-010",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": {
+					"Herbs": ""
+				},
+				"Locations": {
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Forest",
+				"Herbs": "Forest"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": {
+					"Herbs": ""
+				},
+				"Locations": {
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Forest",
+				"Herbs": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Rozmowa z karczmarzem o pracy",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-011",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Innkeeper": "informacja o pracy"
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Inn": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Innkeeper": "Inn"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "informacja o pracy",
+					"Innkeeper": "informacja o pracy"
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Inn": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Innkeeper": "Inn"
+			}
+		}
+	},
+	{
+		"Title": "Rozmowa z chłopem o pracy",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-012",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "informacja o pracy",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Peasant": "Peasant's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Peasant": ""
+				},
+				"Narration": {
+					"Wykopki": "X dni pracy"
+				},
+				"Items": "",
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Wykopki",
+				"Peasant": "Peasant's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Chata chłopa - Pole",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-013",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Field": "",
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Peasant's Hut": "Field"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Field": "",
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Field",
+				"Field": "Peasant's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Pole - Chata chłopa",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-014",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Field": "",
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Field",
+				"Field": "Peasant's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Field": "",
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Peasant's Hut": "Field"
+			}
+		}
+	},
+	{
+		"Title": "Kolacja u chłopa z zakochaniem",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-015",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Miss": "",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Wine barrel": "",
+					"Mutton chop": ""
+				},
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Miss": "Peasant's Hut",
+				"Peasant": "Peasant's Hut",
+				"Mutton chop": "Peasant's Hut",
+				"Wine barrel": "Peasant's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "miłość panny",
+					"Miss": "",
+					"Peasant": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": {
+					"Wine barrel": "",
+					"Mutton chop": ""
+				},
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Pomysł na wzbogacenie się",
+				"Miss": "Peasant's Hut",
+				"Peasant": "Peasant's Hut",
+				"Mutton chop": "Peasant's Hut",
+				"Wine barrel": "Peasant's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Kolacja u chłopa bez zakochania",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-016",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Miss": "",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Wine barrel": "",
+					"Mutton chop": ""
+				},
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Miss": "Peasant's Hut",
+				"Peasant": "Peasant's Hut",
+				"Mutton chop": "Peasant's Hut",
+				"Wine barrel": "Peasant's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Miss": "",
+					"Peasant": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": {
+					"Wine barrel": "",
+					"Mutton chop": ""
+				},
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Pomysł na wzbogacenie się",
+				"Miss": "Peasant's Hut",
+				"Peasant": "Peasant's Hut",
+				"Mutton chop": "Peasant's Hut",
+				"Wine barrel": "Peasant's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Ślub z panną z miłości",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-016",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "miłość panny,wdzięczność chłopa",
+					"Miss": "",
+					"Official": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": {
+					"Coins": "6"
+				},
+				"Locations": {
+					"Town Hall": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Pomysł na wzbogacenie się",
+				"Miss": "Coins",
+				"Official": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "mąż panny",
+					"Miss": "",
+					"Official": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Coins": "6"
+				},
+				"Locations": {
+					"Town Hall": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Coins",
+				"Miss": "Town Hall",
+				"Official": "Town Hall"
+			}
+		}
+	},
+	{
+		"Title": "Dołączenie do zbójców",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-018",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Bandit": "agresja",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": "",
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Sword",
+				"Bandit": "Knife",
+				"Peasant": "Road"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "wdzięczność zbójców",
+					"Bandit": "",
+					"Peasant": "martwy"
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": "",
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Sword",
+				"Bandit": "Knife",
+				"Peasant": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Walka ze zbójcami",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-019",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Bandit": "agresja",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": "",
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Sword",
+				"Bandit": "Knife",
+				"Peasant": "Road"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "wdzięczność chłopa",
+					"Bandit": "martwi",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sword": "",
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Sword",
+				"Bandit": "Road",
+				"Road": "Knife",
+				"Peasant": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Otrzymanie noża od zbójców",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-020",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Bandit": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Bandit": "Knife"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Bandit": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Knife",
+				"Bandit": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Podanie Pannie eliksiru",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-021",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Miss": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": {
+					"Elixir": ""
+				},
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Pomysł na wzbogacenie się",
+				"Miss": "Peasant's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "miłość panny",
+					"Miss": ""
+				},
+				"Narration": {
+					"Pomysł na wzbogacenie się": ""
+				},
+				"Items": "",
+				"Locations": {
+					"Peasant's Hut": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Pomysł na wzbogacenie się",
+				"Miss": "Peasant's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Las - Chata czarodzieja",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-022",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Wizard's Hut": "",
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Forest",
+				"Forest": "Wizard's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Wizard's Hut": "",
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Wizard's Hut",
+				"Forest": "Wizard's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Podniesienie noża",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-023",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Bandit": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Bandit": "Knife"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Bandit": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Knife": ""
+				},
+				"Locations": {
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Knife",
+				"Bandit": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Karczma - Droga",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-024",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Inn": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Road": "Inn"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Inn": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Inn"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Chata czarodzieja - Las",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-025",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Wizard's Hut": "",
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Wizard's Hut",
+				"Forest": "Wizard's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Wizard's Hut": "",
+					"Forest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Forest",
+				"Forest": "Wizard's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Chata chłopa - Droga (razem z chłopem)",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-026",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Peasant's Hut": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Peasant": "Peasant's Hut",
+				"Road": "Peasant's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Peasant": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Peasant's Hut": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Peasant": "Road",
+				"Road": "Peasant's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Chata chłopa - Droga (razem z panną)",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-027",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Miss": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Peasant's Hut": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Peasant's Hut",
+				"Miss": "Peasant's Hut",
+				"Road": "Peasant's Hut"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Miss": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Peasant's Hut": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Miss": "Road",
+				"Road": "Peasant's Hut"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji Droga - Ratusz (razem z panną)",
+		"Title_Generic": "Proszę uzupełnić",
+		"Id": "07-028",
+		"L_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Miss": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Town Hall": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Miss": "Road",
+				"Road": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Characters": {
+					"Hero": "",
+					"Miss": ""
+				},
+				"Narration": "",
+				"Items": "",
+				"Locations": {
+					"Town Hall": "",
+					"Road": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Miss": "Town Hall",
+				"Road": "Town Hall"
+			}
+		}
+	}
+]

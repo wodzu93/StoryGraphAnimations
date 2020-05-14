@@ -1,0 +1,114 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/production_converter.gd" type="Script" id=1]
+[ext_resource path="res://scenes/file_selector.tscn" type="PackedScene" id=2]
+
+[node name="production_viewer" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GraphEditLeft" type="GraphEdit" parent="HBox"]
+margin_right = 510.0
+margin_bottom = 600.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+scroll_offset = Vector2( -510, 0 )
+snap_distance = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Previous" type="Button" parent="HBox/GraphEditLeft"]
+visible = false
+margin_left = 231.0
+margin_right = 310.0
+margin_bottom = 40.0
+text = "Previous"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="Button" parent="HBox/GraphEditLeft"]
+visible = false
+margin_left = 324.0
+margin_right = 403.0
+margin_bottom = 40.0
+text = "Next"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Home" type="Button" parent="HBox/GraphEditLeft"]
+margin_left = 417.0
+margin_right = 496.0
+margin_bottom = 40.0
+text = "Home"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="HBox/GraphEditLeft"]
+margin_left = 20.0
+margin_top = 51.0
+margin_right = 490.0
+margin_bottom = 65.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="file_selector" parent="HBox/GraphEditLeft" instance=ExtResource( 2 )]
+margin_left = 1.54002
+margin_top = 67.7612
+margin_right = 201.54
+margin_bottom = 87.7612
+
+[node name="GraphEditRight" type="GraphEdit" parent="HBox"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 600.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+snap_distance = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="HBox/GraphEditRight"]
+margin_left = 16.0
+margin_top = 51.0
+margin_right = 486.0
+margin_bottom = 65.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="connection_request" from="HBox/GraphEditLeft" to="." method="_on_GraphEdit_connection_request"]
+[connection signal="scroll_offset_changed" from="HBox/GraphEditLeft" to="." method="_on_GraphEditLeft_scroll_offset_changed"]
+[connection signal="button_up" from="HBox/GraphEditLeft/Previous" to="." method="load_production_prev"]
+[connection signal="button_up" from="HBox/GraphEditLeft/Next" to="." method="load_production_next"]
+[connection signal="pressed" from="HBox/GraphEditLeft/Home" to="." method="_on_Home_pressed"]
+[connection signal="item_selected" from="HBox/GraphEditLeft/file_selector" to="." method="_on_file_selector_item_selected"]
+[connection signal="connection_request" from="HBox/GraphEditRight" to="." method="_on_GraphEdit_connection_request"]
+[connection signal="scroll_offset_changed" from="HBox/GraphEditRight" to="." method="_on_GraphEditRight_scroll_offset_changed"]

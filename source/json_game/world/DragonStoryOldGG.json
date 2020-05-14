@@ -1,0 +1,342 @@
+{
+	"Locations": {
+		"Ship": {
+			"Attributes": {
+				"Position": {
+					"x": 1000,
+					"y": 20
+				}
+			}
+		},
+		"Port": {
+			"Connections": {
+				"Ship": {
+
+				},
+				"Tavern": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 80
+				}
+			}
+		},
+		"Tavern": {
+			"Attributes": {
+				"Position": {
+					"x": 1000,
+					"y": 100
+				}
+			}
+		},
+		"Cave": {
+			"Connections": {
+				"Forest": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 400,
+					"y": 80
+				}
+			}
+		},
+		"Dragon's Lair": {
+			"Items": {
+				"Dragon's Egg": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 160
+				}
+			}
+		},
+		"Lumberjack's Hut": {
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 220
+				}
+			}
+		},
+		"Forest": {
+			"Connections": {
+				"Port": {
+
+				},
+				"Dragon's Lair": {
+
+				},
+				"Lumberjack's Hut": {
+
+				},
+				"Wizard's Hut": {
+
+				}
+			},
+			"Items": {
+				"Herbs": {
+
+				},
+				"Wood": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 100
+				}
+			}
+		},
+		"Wizard's Hut": {
+			"Items": {
+				"Elixir": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 280
+				}
+			}
+		},
+		"Pasture": {
+			"Connections": {
+				"Village": {
+
+				},
+				"Shepherd's Hideout": {
+
+				}
+			},
+			"Items": {
+				"Sheep": {
+
+				},
+				"Horse": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 300
+				}
+			}
+		},
+		"Road": {
+			"Connections": {
+				"Forest": {
+
+				},
+				"Market": {
+
+				},
+				"Pasture": {
+
+				},
+				"Inn": {
+
+				},
+				"Town Hall": {
+
+				}
+			},
+			"Characters": {
+				"Hero": {
+					"Items": {
+						"Sword": {
+
+						},
+						"Coins": {
+
+						}
+					}
+				},
+				"Official": {
+					"Items": {
+						"Documents": {
+
+						}
+					}
+				}
+			},
+			"Items": {
+				"Stone": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 400,
+					"y": 200
+				}
+			}
+		},
+		"Market": {
+			"Characters": {
+				"Merchant": {
+					"Items": {
+						"Coins": {
+
+						}
+					}
+				},
+				"Miss": {
+					"Items": {
+						"Egg": {
+
+						}
+					}
+				}
+			},
+			"Items": {
+				"Notice Board": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 240
+				}
+			}
+		},
+		"Village": {
+			"Items": {
+				"Well": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 340
+				}
+			}
+		},
+		"Shepherd's Hideout": {
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 400
+				}
+			}
+		},
+		"Peasant's Hut": {
+			"Connections": {
+				"Road": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 200,
+					"y": 300
+				}
+			}
+		},
+		"Inn": {
+			"Items": {
+				"Broom": {
+
+				},
+				"Torch": {
+
+				},
+				"Meal": {
+
+				},
+				"Mug": {
+
+				},
+				"Furniture": {
+
+				},
+				"Axe": {
+
+				},
+				"Wine Barrel": {
+
+				},
+				"Compass": {
+
+				},
+				"Bottle": {
+
+				},
+				"Knife": {
+
+				},
+				"Saw": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 400
+				}
+			}
+		},
+		"Town Hall": {
+			"Connections": {
+				"Prison": {
+
+				}
+			},
+			"Items": {
+				"Chest": {
+					"Coins": {
+
+					}
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 600,
+					"y": 460
+				}
+			}
+		},
+		"Prison": {
+			"Characters": {
+				"Prison Principal": {
+					"Items": {
+						"Prison Keys": {
+
+						}
+					}
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 800,
+					"y": 460
+				}
+			}
+		},
+		"Field": {
+			"Connections": {
+				"Peasant's Hut": {
+
+				}
+			},
+			"Attributes": {
+				"Position": {
+					"x": 0,
+					"y": 300
+				}
+			}
+		}
+	}
+}

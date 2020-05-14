@@ -1,0 +1,1007 @@
+[
+	{
+		"Title": "Zmiana lokacji",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "PG_00-000",
+		"Description": "Postać przechodzi z lokacji do lokacji.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+						}
+					},
+					"Connections": {
+						"Location2": {
+						}
+					}								
+				},
+				"Location2": {				
+				}				
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {	
+					"Connections": {
+						"Location2": {
+						}
+					}					
+				},
+				"Location2": {
+					"Characters": {
+						"Character1": {
+						}
+					},							
+				}				
+			}
+		}
+	},		
+	{
+		"Title": "Podniesienie przedmiotu",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "PG_00-000",
+		"Description": "Postać podnosi przedmiot z lokacji. Byc może wprowadzimy atrybut przedmiotu bez właściciela, w innym przypadku będzie to kradzież.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+						}
+					},
+					"Items": {
+						"Item1": {
+						},
+					}					
+				},
+			},
+
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+						"Items": {
+							"Item1": {
+							},						}
+					},
+
+					}					
+				},
+			},
+
+		},
+	},
+	{
+		"Title": "Upuszczenie przedmiotu",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "PG_00-000",
+		"Description": "Postać upuszcza przedmiot do lokacji.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+						"Items": {
+							"Item1": {
+							},						}
+					},
+
+					}					
+				},
+			},
+
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+						}
+					},
+					"Items": {
+						"Item1": {
+						},
+					}					
+				},
+			},
+
+		}
+	},
+	{
+		"Title": "Kradzież przedmiotu z lokacji",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"Id": "00-001",
+		"Description": "Postać znajduje sie w lokacji, w której nie ma nikogo innego (żywego), ale jest przedmiot. Ale w przypadku kradzieży fotele postaci są żywe, ale uśpione. jak to zapisać? Postać podnosi przedmiot, ale zyskuje atrybut „poszukiwany”.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Attributes": {
+						"Alive inside":"1" 
+					},
+					"Characters": {
+						"Character1": {
+							}
+					},
+					"Items": {
+						"Item1": {
+							}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Attributes": {
+						"Alive inside":"1" 
+					},
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Wanted":"" 
+							},							
+							"Items": {
+								"Item1": {
+								}							
+							}
+						},
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Wyciągnięcie przedmiotu",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "PG_00-000",
+		"Description": "Postać wyciąga przedmiot z innego przedmiotu.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+									"Items": {
+										"Item2": {
+										},
+									}	
+								},
+							}							
+						}
+					},
+					
+				},
+			},
+
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+						"Items": {
+							"Item1": {
+							},	
+							"Item2": {
+							},												
+						}
+					},
+
+					}					
+				},
+			},
+		},
+	},		
+	{
+		"Title": "Włożenie przedmiotu",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "PG_00-000",
+		"Description": "Postać wkłada przedmiot do innego przedmiotu.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+						"Items": {
+							"Item1": {
+							},	
+							"Item2": {
+							},												
+						}
+					},
+
+					}					
+				},
+			},
+
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+									"Items": {
+										"Item2": {
+										},
+									}	
+								},
+							}							
+						}
+					},
+					
+				},
+			},
+		},
+	},	
+	{
+		"Title": "Walka (śmierć atakowanego)",
+		"Title_Generic": "Przekształcenie obiektu",
+		"Id": "PG_00-000",
+		"Description": "Jeden agresywny bohater atakuje drugiego. Zaatakowany ginie. Wszystkie jego przedmioty upadają na lokację (transformacja osadzenia). Atakujący staje sie poszukiwany listem gończym. Ale w przypadku np. wilków usunęłam list gończy z produkcji szczegółowej. Czy to jest dozwolone? Czy atakujący powinien tracić agresję? Aktualnie nie traci.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Character2": {
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Agression": "",
+								"Wanted": ""								
+							}
+						},
+						"Character2": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+					},
+				},
+			}
+		}
+	},
+	{
+		"Title": "Walka (śmierć atakującego)",
+		"Title_Generic": "Przekształcenie obiektu",
+		"Id": "PG_00-000",
+		"Description": "Jeden agresywny bohater atakuje drugiego. Atakujący ginie. Wszystkie jego przedmioty upadają na lokację (transformacja osadzenia).",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Character2": {
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Character2": {
+						},
+					},
+				},
+			}
+		}
+	},
+	{
+		"Title": "Walka (ucieczka atakowanego)",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "PG_00-000",
+		"Description": "Jeden agresywny bohater atakuje drugiego. Zaatakowany gubi wszystkie posiadane przedmioty (transformacja osadzenia) i zmienia lokację na sąsiednią. Wzbiera w nim nienawiść do atakującego. Czy atakujący powinien tracić agresję? Aktualnie nie traci.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Character2": {
+						}
+					},
+					"Connections": {
+						"Location2": {
+						}
+					}						
+				},
+				"Location2": {
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+					},
+					"Connections": {
+						"Location2": {
+						}
+					}						
+				},
+				"Location2": {
+					"Characters": {
+						"Character2": {
+							"Attributes": {
+								"Hate for Character1": ""
+							}
+						}
+					},					
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Przejęcie przedmiotu od innej postaci",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "00-001",
+		"Description": "Jedna postać przejmuje od drugiej przedmiot.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": ""
+							}
+						},
+						"Character2": {
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+						},
+						"Character2": {
+							"Items": {							
+								"Item1": {
+
+								}
+							}	
+						}
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Wymiana przedmiotu na przedmiot",
+		"Title_Generic": "Przejęcie przedmiotu od innej postaci",
+		"Id": "00-001",
+		"Description": "Postaci zamieniają się przedmiotami. Np. sprzedaż, barter itp.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+								}
+							}
+						},
+						"Character2": {
+							"Items": {
+								"Item2": {
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item2": {
+
+								}
+							}
+						},
+						"Character2": {
+							"Items": {							
+								"Item1": {
+
+								}
+							}	
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Wymiana przedmiotu na atrybut",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "00-001",
+		"Description": "Postać oddaje drugiej przedmiot i zyskuje atrybut",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+
+								}
+							}
+						},
+						"Character2": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Attribute1": {
+
+								}
+							}
+						},
+						"Character2": {
+							"Items": {
+								"Item1": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},	
+
+	{
+		"Title": "Wymiana przedmiotu na wiedzę fabularną",
+		"Title_Generic": "Przejęcie przedmiotu od innej postaci",
+		"Id": "00-001",
+		"Description": "Postać oddaje drugiej przedmiot i zyskuje wiedzę fabularną.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+
+								}
+							}
+						},
+						"Character2": {
+							"Narration": {
+								"Narration1": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Narration": {
+								"Narration1": {
+
+								}
+							}
+						},
+						"Character2": {
+							"Items": {
+								"Item1": {
+
+								}
+							},
+							"Narration": {
+								"Narration1": {
+
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Przejęcie przedmiotu za pomocą atrybutu",
+		"Title_Generic": "Przejęcie przedmiotu od innej postaci",
+		"Id": "00-001",
+		"Description": "Pod wpływem atrybutu jednej postaci druga oddaje jej przedmiot, który posiada. Wykorzystany atrybut znika (zmniejsza się o jednen).",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Attribute1": ""
+							}
+						},
+						"Character2": {
+							"Items": {
+								"Item1": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+								}
+							},
+							"Attributes": {
+								"Attribute1": "-1"
+							}
+						
+						},
+						"Character2": {
+
+						}
+					}
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Przejęcie przedmiotu za pomocą wiedzy fabularnej",
+		"Title_Generic": "Przejęcie przedmiotu od innej postaci",
+		"Id": "00-001",
+		"Description": "Pod wpływem wiedzy fabularnej jednej postaci druga oddaje jej przedmiot, który posiada. ",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Narration": {
+								"Narration1": {									
+								}
+							}
+						},
+						"Character2": {
+							"Items": {
+								"Item1": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+								}
+							},
+							"Narration": {
+								"Narration1": {									
+								}
+							}
+						
+						},
+						"Character2": {
+
+						}
+					}
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Przekształcenie atrybutu w przedmiot",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "00-001",
+		"Description": "Postać traci przedmiot, ale zyskuje atrybut. A może obiekt, nie postać?",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Attribute1": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Przekształcenie przedmiotu w atrybut właściciela",
+		"Title_Generic": "Przekształcenie obiektu",
+		"Id": "00-001",
+		"Description": "Postać traci przedmiot, ale zyskuje atrybut.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+
+								}
+							}							
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Attribute1": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Przekształcenie przedmiotu w atrybut innego przedmiotu",
+		"Title_Generic": "Przekształcenie obiektu",
+		"Id": "00-001",
+		"Description": "Postać traci przedmiot, ale inny przedmiot zyskuje atrybut.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1": {
+
+								}
+							}							
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Attribute1": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Przekształcenie obiektu w obiekt(y)",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "00-001",
+		"Description": "Obiekt przekształca się na inny obiekt lub ten sam obiekt o zmienionych właściwościach. (Poprzednia nazwa:Konwersja przedmiotu, ale wtedy było L-C-I1 -> L-C-I2). Czy może być aż tak ogólnie?",
+		"L_Side": {
+			"Object1": {
+
+			}
+		},
+		"R_Side": {
+			"Object2": {
+
+			}
+		}
+	},
+	{
+		"Title": "Imperatyw fabularny zmiany atrybutu obiektu",
+		"Title_Generic": "Przekształcenie obiektu",
+		"Id": "00-007",
+		"Description": "Pod wpływem posiadania informacji narracyjnej obiekt zmienia atrybut (zyskuje, traci, zmienia itp.",
+		"L_Side": {
+						"Object1": {
+							"Attributes": {
+								"Attribute1": "x"
+							},
+							"Narration": {
+								"Narration1": {
+								}
+							}	
+						}
+		},
+		"R_Side": {
+						"Object1": {
+							"Attributes": {
+								"Attribute1": "y"
+							},
+							"Narration": {
+								"Narration1": {
+								}
+							}	
+						}
+					},
+
+
+	},
+	{
+		"Title": "Pozyskanie wiedzy fabularnej",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "00-007",
+		"Description": "Postać dowiaduje sie czegoś.",
+		"L_Side": {
+			"Object1": {
+
+			}
+		},
+		"R_Side": {
+			"Object1": {
+				"Narration": {
+					"Narration1": {
+					}
+				}	
+			}
+		},
+	},
+	{
+		"Title": "Utrata wiedzy fabularnej",
+		"Title_Generic": "Produkcja generyczna",
+		"Id": "00-007",
+		"Description": "Postac zapomina o czymś.",
+		"L_Side": {
+						"Object1": {
+							"Narration": {
+								"Narration1": {
+								}
+							}	
+						}
+					},
+
+		"R_Side": {
+						"Object1": {
+
+						}
+		},
+	},
+
+	{
+		"Title": "Przekształcenie przedmiotu w wiedzę fabularną",
+		"Title_Generic": "Przekształcenie obiektu;Pozyskanie wiedzy fabularnej",
+		"Id": "00-007",
+		"Description": "Postać dowiaduje sie czegoś, ale traci przedmiot. Tutaj nie mamy powiązania z lokacją. Sprawdzi się to?",
+		"L_Side": {
+			"Characters": {
+				"Character1":{
+					"Items": {
+						"Item": {
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Characters": {
+				"Character1":{
+					"Narration": {
+						"Narration1": {
+						}
+					}
+				}								
+			}
+		},
+	},	
+
+	{
+		"Title": "Przekształcenie wiedzy fabularnej w inną wiedzę fabularną",
+		"Title_Generic": "Pozyskanie wiedzy fabularnej",
+		"Id": "00-007",
+		"Description": "Postać dowiaduje sie czegoś, ale traci inną wiedzę fabularną",
+		"L_Side": {
+			"Characters": {
+				"Character1":{
+					"Narration": {
+						"Narration1": {
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Characters": {
+				"Character1":{
+					"Narration": {
+						"Narration2": {
+						}
+					}
+				}								
+			}
+		},
+	},	
+
+	{
+		"Title": "Przekształcenie martwej postaci w przedmiot",
+		"Title_Generic": "Przekształcenie obiektu w obiekt(y)",
+		"Id": "00-007",
+		"Description": "Martwa postać pod wpływem osoby trzeciej zamienia się w obiekt.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+						},
+						"Character2": {
+							"Attributes": {
+								"Dead":"" 
+							},							
+						}							
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Items": {
+								"Item1":"" 
+							},								
+						},					
+					},
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Rozpoczęcie czasochłonnego zadania",
+		"Title_Generic": "Przekształcenie obiektu w obiekt(y)",
+		"Id": "00-007",
+		"Description": "Bohater podejmuje się zadania fabularnego trwającego x ruchów.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+
+							},	
+							"Narration": {
+								"Work1": {
+									"Moves":"x"
+								}
+							},														
+						}							
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Busy":"x" 
+							},	
+							"Narration": {
+								"Work": {
+									"Moves":"x"
+								}
+							},																					
+						}							
+					},
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Wykonywanie czasochłonnego zadania",
+		"Title_Generic": "Przekształcenie obiektu w obiekt(y)",
+		"Id": "00-007",
+		"Description": "Bohater jest zajęty elementem fabularnym, póki jego licznik sie nie wyzeruje.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Busy":"x" 
+							},													
+						}							
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Busy":"dla x>0:x-1;dla x=0 usuń atrybut i połączenie z węzłem narracyjnym." 
+							},														
+						}							
+					},
+				}
+			}
+		}
+	},	
+
+]

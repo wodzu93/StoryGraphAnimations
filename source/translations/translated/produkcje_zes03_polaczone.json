@@ -1,0 +1,1096 @@
+[
+	{
+		"Title": "Aresztowanie bohatera",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: List gończy",
+					"Guard": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Missing translation for: Przyłapany na kradzieży": "Hero",
+				"Guard": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Skuty kajdanami, List gończy",
+					"Guard": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Missing translation for: Przyłapany na kradzieży": "Hero",
+				"Guard": "Town Hall"
+			}
+		}
+	},
+	{
+		"Title": "Konwersja owcy",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Knife": "",
+					"Sheep": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Sheep": "Hero",
+				"Knife": "Hero"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Knife": "",
+					"Mutton chop": "",
+					"Sheep's leather": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Sheep's leather": "Hero",
+				"Mutton chop": "Hero",
+				"Knife": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Otwarcie kufra pilnikiem",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Missing translation for: Dowolna lokacja": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Chest": "Missing translation for: Zamknięty na kłódkę",
+					"File": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Missing translation for: Dowolna lokacja",
+				"Chest": "Hero",
+				"File": "Hero"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Missing translation for: Dowolna lokacja": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Chest": "",
+					"Dragon's egg": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Missing translation for: Dowolna lokacja",
+				"Dragon's egg": "Hero",
+				"Chest": "Missing translation for: Dowolna lokacja"
+			}
+		}
+	},
+	{
+		"Title": "Walka z pasterzem udana",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Shepard": "Missing translation for: Agresja"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Shepard": "Pasture"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Shepard": "Missing translation for: Martwy"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Shepard": "Pasture"
+			}
+		}
+	},
+	{
+		"Title": "Podniesienie kufra",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": "Missing translation for: Brak strażnika"
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Chest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Chest": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": "Missing translation for: Brak strażnika"
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Chest": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Chest": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Pozyskanie informacji o jaju smoka",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Inn": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Wdzięczność karczmarza",
+					"Innkeeper": "Missing translation for: Informacja"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Innkeeper": "Inn"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Inn": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Informacja",
+					"Innkeeper": "Missing translation for: Informacja"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Innkeeper": "Inn"
+			}
+		}
+	},
+	{
+		"Title": "Przeczytanie ogłoszenia karczmarza o baraninie na targowisku",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Market": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Notice board": "Missing translation for: Ogłoszenie karczmarza"
+				}
+			},
+			"Edges": {
+				"Hero": "Market",
+				"Notice board": "Market"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Informacja o ogłoszeniu"
+				},
+				"Narration": {
+					"Missing translation for: Rozpoczęcie misji \"Najdroższa jajecznica\"": ""
+				},
+				"Items": {
+					"Notice board": "Missing translation for: Ogłoszenie karczmarza"
+				}
+			},
+			"Edges": {
+				"Hero": "Market",
+				"Notice board": "Market",
+				"Missing translation for: Rozpoczęcie misji \"Najdroższa jajecznica\"": "Market"
+			}
+		}
+	},
+	{
+		"Title": "Sprzedaż jaja czarodziejowi",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Wizard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Dragon's egg": "",
+					"Elixir": "Missing translation for: wzmacniający"
+				}
+			},
+			"Edges": {
+				"Hero": "Wizard's Hut",
+				"Dragon's egg": "Hero",
+				"Wizard": "Wizard's Hut",
+				"Missing translation for: Eliskir": "Wizard"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Wizard's Hut": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Wizard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Dragon's egg": "",
+					"Elixir": "Missing translation for: wzmacniający"
+				}
+			},
+			"Edges": {
+				"Hero": "Wizard's Hut",
+				"Dragon's egg": "Wizard",
+				"Wizard": "Wizard's Hut",
+				"Missing translation for: Eliskir": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Walka ze strażnikiem ratusza nieudana",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Guard": "Missing translation for: Agresja"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Guard": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Martwy",
+					"Guard": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Guard": "Town Hall"
+			}
+		}
+	},
+	{
+		"Title": "Sprzedaż jaja kupcowi",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Market": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Merchant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Dragon's egg": "",
+					"Coins": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Market",
+				"Dragon's egg": "Hero",
+				"Merchant": "Market",
+				"Coins": "Merchant"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Market": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Merchant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Dragon's egg": "",
+					"Coins": "Missing translation for: 100 szt."
+				}
+			},
+			"Edges": {
+				"Hero": "Market",
+				"Dragon's egg": "Merchant",
+				"Merchant": "Market",
+				"Coins": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Ukrycie się bohatera za beczką",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Wine barrel": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Wine barrel": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Ukryty za beczką"
+				},
+				"Narration": "",
+				"Items": {
+					"Wine barrel": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Wine barrel": "Town Hall"
+			}
+		}
+	},
+	{
+		"Title": "Uprowadzenie owcy",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sheep": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Sheep": "Pasture"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Sheep": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Sheep": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Walka z pasterzem nieudana",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Shepard": "Missing translation for: Agresja"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Shepard": "Pasture"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Martwy",
+					"Shepard": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Shepard": "Pasture"
+			}
+		}
+	},
+	{
+		"Title": "Walka ze strażnikiem ratusza ucieczka strażnika",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": "",
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Guard": "Missing translation for: Agresja"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Guard": "Town Hall",
+				"Town Hall": "Road"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": "",
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: List gończy",
+					"Guard": "Missing translation for: Nienawiść do bohatera"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Guard": "Road",
+				"Town Hall": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Walka z pasterzem ucieczka pasterza",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Pasture": "",
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Shepard": "Missing translation for: Agresja"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Shepard": "Pasture",
+				"Pasture": "Road"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Pasture": "",
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: List gończy",
+					"Shepard": "Missing translation for: Nienawiść do bohatera"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Shepard": "Road",
+				"Pasture": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Wtrącenie bohatera do więzienia",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": "",
+					"Prison": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Skuty kajdanami",
+					"Guard": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Town Hall": "Prison",
+				"Guard": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": "",
+					"Prison": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Guard": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Prison",
+				"Town Hall": "Prison",
+				"Guard": "Town Hall"
+			}
+		}
+	},
+	{
+		"Title": "Walka ze strażnikiem ratusza udana",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Guard": "Missing translation for: Agresja"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Guard": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Guard": "Missing translation for: Martwy"
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Guard": "Town Hall"
+			}
+		}
+	},
+	{
+		"Title": "Wywabienie strażnika",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": "",
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Ukryty za beczką",
+					"Guard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Wine barrel": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Guard": "Town Hall",
+				"Wine barrel": "Town Hall",
+				"Town Hall": "Road"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Town Hall": "",
+					"Road": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Guard": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Wine barrel": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Guard": "Road",
+				"Wine barrel": "Town Hall",
+				"Town Hall": "Road"
+			}
+		}
+	},
+	{
+		"Title": "Zakup pilnika",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Market": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Merchant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"File": "",
+					"Coins": "Missing translation for: 1 szt."
+				}
+			},
+			"Edges": {
+				"Hero": "Market",
+				"Coins": "Hero",
+				"Merchant": "Market",
+				"File": "Merchant"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Market": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Merchant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"File": "",
+					"Coins": "Missing translation for: 1 szt."
+				}
+			},
+			"Edges": {
+				"Hero": "Market",
+				"Coins": "Merchant",
+				"Merchant": "Market",
+				"File": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Zbycie baraniny (karczma)",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Inn": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Innkeeper": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Mutton chop": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Mutton chop": "Hero",
+				"Innkeeper": "Inn"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Inn": ""
+				},
+				"Characters": {
+					"Hero": "Missing translation for: Wdzięczność karczmarza",
+					"Innkeeper": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Mutton chop": ""
+				}
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Mutton chop": "Innkeeper",
+				"Innkeeper": "Inn"
+			}
+		}
+	},
+	{
+		"Title": "Zbycie baraniny (targ)",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Market": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Merchant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Mutton chop": "",
+					"Coins": "Missing translation for: 2 szt."
+				}
+			},
+			"Edges": {
+				"Hero": "Market",
+				"Mutton chop": "Hero",
+				"Merchant": "Market",
+				"Coins": "Merchant"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Market": ""
+				},
+				"Characters": {
+					"Hero": "",
+					"Merchant": ""
+				},
+				"Narration": "",
+				"Items": {
+					"Mutton chop": "",
+					"Coins": "Missing translation for: 2 szt."
+				}
+			},
+			"Edges": {
+				"Hero": "Market",
+				"Mutton chop": "Merchant",
+				"Merchant": "Market",
+				"Coins": "Hero"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji droga-karczma",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Inn": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Inn"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Inn": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Road": "Inn"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji droga-pastwisko",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Pasture"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Road": "Pasture"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji droga-ratusz",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Road": "Town Hall"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji karczma-droga",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Inn": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Inn",
+				"Road": "Inn"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Inn": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Inn"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji pastwisko-droga",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Pasture",
+				"Road": "Pasture"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Pasture": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Pasture"
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokalizacji ratusz-droga",
+		"L_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Town Hall",
+				"Road": "Town Hall"
+			}
+		},
+		"R_Side": {
+			"Vertex": {
+				"Locations": {
+					"Road": "",
+					"Town Hall": ""
+				},
+				"Characters": {
+					"Hero": ""
+				},
+				"Narration": "",
+				"Items": ""
+			},
+			"Edges": {
+				"Hero": "Road",
+				"Road": "Town Hall"
+			}
+		}
+	}
+]

@@ -1,0 +1,1492 @@
+[
+	{
+		"Title": "Ślub z Panną pogrążoną w rozpaczy",
+		"Title_Generic": "Imperatyw fabularny zmiany atrybutu obiektu",
+		"Id": "07-001",
+		"Description": "Bohater liczy na korzyści wynikające ze ślubu a panna jest pogrążona w rozpaczy i się zgadza na ślub. Żenią się. Bezpośrednim efektem małżeństwa jest pozyskanie 6 monet przez bohatera od panny.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Idea of getting rich": ""
+							}
+						},
+						"Miss": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=6"
+									}
+								}
+							},
+							"Attributes": {
+								"Desperation": ""
+							}
+						},
+						"Official": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+6"
+									}
+								}
+							},
+							"Attributes": {
+								"Married": "Miss"
+							}
+						},
+						"Miss": {
+							"Attributes": {
+								"Married": "Hero"
+							},
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "-6"
+									}
+								}
+							},	
+						},
+						"Official": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Ślub z panną zakochaną",
+		"Title_Generic": "Imperatyw fabularny zmiany atrybutu obiektu",
+		"Id": "07-016",
+		"Description": "Bohater liczy na korzyści wynikające ze ślubu a panna jest zakochana. Bezpośrednim efektem małżeństwa jest pozyskanie 6 monet przez bohatera od panny.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Pomysł na wzbogacenie się": ""
+							}
+						},						
+						"Official": {
+
+						},
+						"Miss": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=6"
+									}
+								}
+							},
+							"Attributes": {
+								"Love": "Hero"
+							}
+						},						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+6"
+									}
+								}
+							},
+							"Attributes": {
+								"Married": "Miss"
+							}
+						},
+						"Miss": {
+							"Attributes": {
+								"Married": "Hero"
+							},
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "-6"
+									}
+								}
+							},							
+						},
+						"Official": {
+
+						}
+					}
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Odejście chłopa",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-002",
+		"Description": "Dziwna produkcja, w której chłop przechodzi z lasu na drogę, ponieważ nienawidzi zbójców. Raczej do wywalenia.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Hate": "Bandit"
+							}
+						},
+						"Peasant": {
+							"Attributes": {
+								"Hate": "Bandit"
+							}
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Hate": "Bandit"
+							}
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+					"Characters": {
+						"Peasant": {
+							"Attributes": {
+								"Hate": "Bandit"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Odrzucenie bohatera",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-002",
+		"Description": "Dziwna produkcja, w której bohater ścigany listem gończym wpada na pomysł wzbogacenia się a panna wchodzi do chaty. raczej do wywalenia.",
+		"L_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Wanted": ""
+							},
+							"Narration": {
+								"Idea of getting rich": ""
+							}							
+						},
+						"Miss": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Wanted": ""
+							}
+						},
+						"Miss": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+
+				}
+			}
+		}
+	},
+	{
+		"Title": "Rozmowa z chłopem o wykopkach",
+		"Title_Generic": "Rozmowa z przekazaniem informacji",
+		"Id": "00-007",
+		"Description": "Bohater dowiaduje sie od chłopa o możliwości zarobienia na wykopkach.",
+		"L_Side": {
+			"Locations": {			
+				"Peasant's Hut": {
+					"Characters": {
+						"Peasant": {
+							"Narration": {
+								"Wykopki": {
+									"Moves":"5"
+								}
+							}	
+						},
+						"Hero": {
+							"Narration": {
+								"Harvesting job from peasant": ""
+							}
+						}
+					}
+				}
+			}	
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {	
+					"Characters": {						
+						"Peasant": {
+							"Narration": {
+								"Wykopki": {
+									"Moves":"5"
+								}
+							}	
+						},
+						"Hero": {
+							"Narration": {
+								"Wykopki": {
+									"Moves":"5"
+								}
+							}	
+						}	
+					}			
+				}
+			}
+		},
+	},		
+	{
+		"Title": "Rozpoczęcie pracy na polu",
+		"Title_Generic": "Rozpoczęcie czasochłonnego zadania",
+		"Id": "00-007",
+		"Description": "Bohater podejmuje się wykopków u chłopa trwających x ruchów.",
+		"L_Side": {
+			"Locations": {
+				"Field": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+
+							},	
+							"Narration": {
+								"Wykopki": {
+									"Moves":"5"
+								}
+							},														
+						}							
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Field": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Busy":"5" 
+							},	
+							"Narration": {
+								"Wykopki": {
+									"Moves":"5"
+								}
+							},																					
+						}							
+					},
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Praca na polu",
+		"Title_Generic": "Wykonywanie czasochłonnego zadania",
+		"Id": "00-007",
+		"Description": "Bohater pracuje na wykopkach u chłopa.",
+		"L_Side": {
+			"Locations": {
+				"Field": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Busy":"X" 
+							},	
+							"Narration": {
+								"Wykopki": {
+									"Moves":"5"
+								}
+							},																				
+						}							
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Character1": {
+							"Attributes": {
+								"Busy":"X-1" 
+							},	
+							"Narration": {
+								"Wykopki": {
+									"Moves":"5"
+								}
+							},																					
+						}							
+					},
+				}
+			}
+		}
+	},	
+
+	{
+		"Title": "Zakończenie pracy na polu",
+		"Title_Generic": "Zakończenie czasochłonnego zadania",
+		"Id": "00-007",
+		"Description": "Bohater zbiera plon na wykopkach u chłopa.",
+		"L_Side": {
+			"Locations": {
+				"Field": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Busy":"1" 
+							},	
+							"Narration": {
+								"Wykopki": {
+									"Moves":"5"
+								}
+							},																				
+						}							
+					},
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Field": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Harvest":{
+									"Attributes": {
+										"Value":"2"
+									}
+								} 
+							},																					
+						}							
+					},
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Przekazanie plonu chłopu",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "07-004",
+		"Description": "Bohater przekazuje plon chłopu i dostaje zapłatę.",
+		"L_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Harvest": {
+									"Attributes": {
+										"Value":"2"
+									}
+								}
+							},
+						},
+						"Peasant": {
+							"Items": {
+								"Coins":{
+									"Attributes": {									
+										"Amount":">=2"
+									}
+								} 
+							},
+						}						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins":{
+									"Attributes": {								
+										"Amount":"+2"
+									}
+								} 
+							},
+						},
+						"Peasant": {
+							"Items": {
+								"Harvest":{
+									"Attributes": {									
+										"Value":"2"
+									} 
+								}
+							},
+						},						
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Droga - Chata chłopa",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-005",
+		"Description": "Bohater przechodzi z drogi do chaty chłopa.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Peasant's Hut": {
+						}
+					}					
+				},
+				"Peasant's Hut": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": {
+						"Peasant's Hut": {
+						}
+					}	
+				},
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Las-Droga",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-006",
+		"Description": "Bohater wychodzi z lasu na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+
+				},
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Connections": {
+						"Road": {
+						}
+					}	
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},				
+			}
+		}
+	},
+{
+		"Title": "Walka zbójców z bohaterem i chłopem (ucieczka bohatera i chłopa)",
+		"Title_Generic": "Walka (ucieczka atakowanego)",
+		"Id": "PG_00-000",
+		"Description": "Zbójcy atakują bohatera i chłopa. Napadnięci uciekają do lasu.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Bandit": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+						"Hero": {
+						},
+						"Peasant": {
+						}
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}						
+				},
+				"Forest": {
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Bandit": {
+							"Attributes": {
+								"Agression": ""
+							}
+						},
+					},
+					"Connections": {
+						"Forest": {
+						}
+					}						
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Hate": "Bandit"
+							}
+						},
+						"Peasant": {
+							"Attributes": {
+								"Hate": "Bandit"
+							}
+						}						
+					},					
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kupno eliksiru",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "07-009",
+		"Description": "Bohater kupuje eliksir od czarodzieja.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+							"Items": {
+								"Elixire": {
+									"Attributes":{
+										"Aim":"Love"
+									}
+								}
+							}
+						},
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes":{
+										"Amount":">=3"
+									}
+								},
+								"Herbs": {
+									"Attributes":{
+
+									}
+								}								
+							}
+						}						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Wizard": {
+							"Items": {
+								"Coins": {
+									"Attributes":{
+										"Amount":"+3"
+									}
+								},
+								"Herbs": {
+									"Attributes":{
+
+									}
+								}								
+							}
+						},						
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes":{
+										"Amount":"-3"
+									}
+								},	
+								"Elixire": {
+									"Attributes":{
+										"Aim":"Love"
+									}
+								},															
+							}
+						},
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zebranie ziół",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"Id": "07-010",
+		"Description": "Bohater zbiera zioła w lesie.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Herbs": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Herbs": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Rozmowa z karczmarzem o pracy",
+		"Title_Generic": "Rozmowa z przekazaniem informacji",
+		"Id": "07-011",
+		"Description": "Bohater dowiaduje się od karczmarza, że chłop szuka pracownika.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Harvesting job from peasant": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Harvesting job from peasant": ""
+							}
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Harvesting job from peasant": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Chata chłopa – Pole",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-013",
+		"Description": "Bohater wychodzi z chaty chłopa na pole.",
+		"L_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Field": {
+						}
+					}						
+				},				
+				"Field": {
+
+				},
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Connections": {
+						"Field": {
+						}
+					}	
+				},
+				"Field": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},				
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Pole – Chata chłopa",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-014",
+		"Description": "Bohater wchodzi z pola do chaty chłopa.",
+		"L_Side": {
+			"Locations": {
+				"Field": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Peasant's Hut": {
+						}
+					}						
+				},
+				"Peasant's Hut": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Field": {
+					"Connections": {
+						"Peasant's Hut": {
+						}
+					}
+				},
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},					
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kolacja u chłopa z zakochaniem",
+		"Title_Generic": "Przekształcenie przedmiotu w atrybut innego przedmiotu",
+		"Id": "07-015",
+		"Description": "Bohater zostaje zaproszony na kolację i panna się w nim zakochuje, a on wpada na pomysł, jak sie ustawić w życiu przy pomocy ożenku.",
+		"L_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Miss": {
+
+						},
+						"Peasant": {
+
+						}
+					},
+					"Items": {
+						"Mutton chop": {
+
+						},
+						"Wine barrel": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Idea of getting rich":""
+							}
+						},						
+						"Miss": {
+							"Attributes": {
+								"Love":"Hero"
+							}
+						},
+						"Peasant": {
+
+						}
+					},
+					"Items": {
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Kolacja u chłopa bez zakochania",
+		"Title_Generic": "Pozyskanie wiedzy fabularnej",
+		"Id": "07-016",
+		"Description": "Bohater zostaje zaproszony na kolację i wpada na pomysł, jak sie ustawić w życiu przy pomocy ożenku.",
+		"L_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+						},
+						"Miss": {
+
+						},
+						"Peasant": {
+
+						}
+					},
+					"Items": {
+						"Mutton chop": {
+
+						},
+						"Wine barrel": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Idea of getting rich":""
+							}
+						},						
+						"Miss": {
+
+						},
+						"Peasant": {
+
+						}
+					},
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Walka ze zbójcami (Dołączenie do zbójców)",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "07-018",
+		"Description": "Podczas napadu zbójców na chłopa i bohatera, bohater porzuca towarzysza i dołącza do napastników, ratując życie i zdobywając wdzięczność zbójców.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Peasant": {
+
+						},
+						"Bandit": {
+							"Items": {
+								"Knife": {
+
+								}
+							},
+							"Attributes": {
+								"Agression": {
+
+								}
+							}					
+						},
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							},
+						}
+					}	
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Peasant": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Bandit": {
+							"Items": {
+								"Knife": {
+
+								}
+							},
+							"Attributes": {
+								"Agression": {
+
+								}
+							},
+							"Narration": {
+								"Gratitude": {
+									"From":"Bandit",
+									"To":"Hero"
+								}	
+							}												
+						},
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							},
+							"Narration": {
+								"Gratitude": {
+									"From":"Innkeeper",
+									"To":"Hero"
+								}	
+							}							
+						}						
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka ze zbójcami",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "07-019",
+		"Description": "Bohater i chłop zostają zaatakowani przez zbójców, ale bohater ma miecz i zabija zbójców.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Peasant": {
+
+						},
+						"Bandit": {
+							"Items": {
+								"Knife": {
+
+								}
+							},
+							"Attributes": {
+								"Agression": {
+
+								}
+							}					
+						},
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							},
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Bandit": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Peasant": {
+
+						},
+						"Hero": {
+							"Items": {
+								"Sword": {
+
+								}
+							},
+						}						
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Otrzymanie noża od zbójców",
+		"Title_Generic": "Przejęcie przedmiotu za pomocą atrybutu",
+		"Id": "07-020",
+		"Description": "Wdzięczni zbójcy dają bohaterowi nóż.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Bandit": {
+							"Items": {
+								"Knife": {
+
+								}
+							}
+						}						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Bandit": {
+
+						},
+						"Hero": {
+							"Items": {
+								"Knife": {
+
+								}
+							}
+						}						
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Podanie Pannie eliksiru",
+		"Title_Generic": "Przekształcenie przedmiotu w atrybut innego przedmiotu",
+		"Id": "07-021",
+		"Description": "Aby zyskac miłość panny bohater podaje jej eliksir miłosny.",
+		"L_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Miss": {
+
+						},
+						"Hero": {
+							"Items": {
+								"Elixire": {
+									"Attributes":{
+										"Aim":"Love"
+									}
+								}
+							},
+							"Narration": {
+								"Idea of getting rich": {
+								}
+							}							
+						}						
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Miss": {
+							"Attributes": {
+								"Love": "Hero"
+							}
+						},
+						"Hero": {
+							"Narration": {
+								"Idea of getting rich": {
+								}
+							}							
+						}						
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Las – Chata czarodzieja",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-022",
+		"Description": "Bohater wchodzi z lasu do chaty czarodzieja.",
+		"L_Side": {
+			"Locations": {
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}						
+				},
+				"Wizard's Hut": {
+
+				},
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Forest": {
+					"Connections": {
+						"Wizard's Hut": {
+						}
+					}	
+				},				
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				},
+			}
+		}
+	},
+	{
+		"Title": "Podniesienie noża",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"Id": "07-023",
+		"Description": "Bohater zauważa nóż leżący na drodze i podnosi go.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Knife": {
+
+						}
+					}					
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Knife": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Karczma-Droga",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-024",
+		"Description": "Bohater wyszedł z karczmy na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Connections": {
+						"Road": {
+						}
+					}	
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Chata czarodzieja - Las",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-025",
+		"Description": "Bohater wychodzi z chaty czarodzieja do lasu.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+						},
+					},						
+					"Connections": {
+						"Forest": {
+						}
+					}							
+				},
+				"Forest": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Connections": {
+						"Forest": {
+						}
+					}	
+				},
+				"Forest": {
+					"Characters": {
+						"Hero": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Chata chłopa - Droga (razem z chłopem)",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-026",
+		"Description": "Bohater wychodzi z chaty chłopa na drogę razem z chłopem.",
+		"L_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Peasant": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Connections": {
+						"Road": {
+						}
+					}	
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Peasant": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Chata chłopa - Droga (razem z panną)",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-027",
+		"Description": "Bohater wychodzi z chaty chłopa na drogę razem z panną.",
+		"L_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Miss": {
+
+						}
+					},
+					"Connections": {
+						"Road": {
+						}
+					}						
+				},
+				"Road": {
+
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Peasant's Hut": {
+					"Connections": {
+						"Road": {
+						}
+					}	
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Miss": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji Droga - Ratusz (razem z panną)",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "07-028",
+		"Description": "Bohater wchodzi z drogi do ratusza razem z chłopem.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Miss": {
+
+						}
+					},
+					"Connections": {
+						"Town Hall": {
+						}
+					}						
+				},				
+				"Town Hall": {
+
+				},
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": {
+						"Town Hall": {
+						}
+					}	
+				},				
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Miss": {
+
+						}
+					}
+				},
+			}
+		}
+	}
+]

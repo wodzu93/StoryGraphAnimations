@@ -1,0 +1,23 @@
+{
+"Title": "Initial locations",
+"Title_Generic": "Initial locations",
+"Locations": {
+		"Vertex": {
+			"Ship":"", "Port":"", "Tavern":"", "Cave":"", "Dragon's Lair":"", "Lumberjack's Hut":"", "Forest":"", "Wizard's Hut":"", "Pasture":"", "Road":"", "Market":"", "Village":"", "Shepherd's Hideout":"", "Peasant's Hut":"", "Inn":"", "Town Hall":"", "Prison":"", "Field":""
+		},
+		"Edges": [{"Ship":"Port"}, {"Tavern":"Port"}, {"Port":"Forest"}, {"Forest":"Cave"}, {"Dragon's Lair":"Forest"}, {"Lumberjack's Hut":"Forest"}, {"Forest":"Road"},  {"Wizard's Hut":"Forest"}, {"Market":"Road"}, {"Pasture":"Road"}, {"Road":"Peasant's Hut"}, {"Village":"Pasture"}, {"Shepherd's Hideout":"Pasture"},  {"Peasant's Hut":"Field"}, {"Inn":"Road"}, {"Town Hall":"Road"}, {"Prison":"Town Hall"}]
+},
+"Characters": {
+		"Vertex": {
+			"Hero":"", "Innkeeper":"", "Innkeeper Helper":"", "People":"", "Official":"", "Wizard":"", "Captain":"", "Merchant":"", "Bandit":"", "Dragon":"", "Miss":"", "Peasant":"", "Pedestrian":"", "Prison Principal":"", "Prison Principal's Daughter":"", "Guard":"", "Lumberjack":"", "Prisoner":"", "Sheperd":"", "Drunkard":"", "Friend":"", "Wolf":""
+
+		},
+		"Edges": [{"Hero":"Road"}, {"Innkeeper":"Inn"}, {"Innkeeper Helper":"Inn"}, {"People":"Road"}, {"Official":"Road"}, {"Wizard":"Wizard's Hut"}, {"Captain":"Ship"}, {"Merchant":"Market"},  {"Bandit":"Forest"}, {"Dragon":"Dragon's Lair"}, {"Miss":"Market"}, {"Peasant":"Peasant's Hut"}, {"Pedestrian":"Road"}, {"Prison Principal":"Prison"}, {"Prison Principal's Daughter":"Prison"}, {"Prisoner":"Prison"}, {"Guard":"Prison"}, {"Lumberjack":"Forest"}, {"Prisoner":"Prison"}, {"Sheperd":"Pasture"}, {"Drunkard":"Inn"}, {"Friend":"Inn"}, {"Wolf":"Forest"} ]
+},
+"Items": {
+		"Vertex": {
+			"Documents":"", "Broom":"", "Torch":"", "Sword":"", "Elixir":"", "Meal":"", "Sheep":"", "Wolf's Leather":"", "Stone":"", "Mug":"", "Furniture":"", "Herbs":"", "Coins":"", "Dragon's Tooth":"", "Notice Board":"", "Dragon's Egg":"", "Axe":"", "Arrest Warrant":"", "Wine Barrel":"", "Compass":"", "Egg":"", "Bottle":"", "Proof":"", "Horse":"", "Lockpick":"", "Mutton Chop":"", "File":"", "Knife":"", "Saw":"", "Wood":"", "Armchair":"", "Prison Keys":"", "Chest":"", "Window":"", "Sheep's leather":"", "Well":"", "Harvest":"", "Poison":""
+		},
+		"Edges": [{"Documents":"Official"}, {"Broom":"Inn"}, {"Torch":"Inn"}, {"Sword":"Hero"}, {"Elixir":"Wizard's Hut"}, {"Meal":"Inn"}, {"Sheep":"Pasture"}, {"Stone":"Road"}, {"Mug":"Inn"}, {"Furniture":"Inn"}, {"Herbs":"Forest"}, {"Coins":"Hero"}, {"Coins":"Merchant"}, {"Notice Board":"Market"}, {"Dragon's Egg":"Dragon's Lair"}, {"Axe":"Inn"}, {"Wine Barrel":"Inn"}, {"Compass":"Inn"}, {"Egg":"Miss"}, {"Bottle":"Inn"}, {"Horse":"Pasture"},  {"Knife":"Inn"}, {"Saw":"Inn"}, {"Wood":"Forest"}, {"Prison Keys":"Prison Principal"}, {"Coins":"Chest"}, {"Chest":"Town Hall"} , {"Well":"Village"} ]
+}
+}

@@ -1,0 +1,1582 @@
+[
+	{
+		"Title": "Aresztowanie bohatera",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-000",
+		"Description": "Bohater jest poszukiwany. Spotyka postać, która ma chęć go aresztować. Związawszy bohatera postać odprowadza go do ratusza. Jak zapisac teleportację lub przejście pośrednie do ratusza? (Aktualnie lokacja musi być obok ratusza, żeby dało się zaaresztować bohatera.)",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Wanted": ""
+							}
+
+						},
+						"Character1": {
+
+						}
+					},
+					"Connections": {
+						"Town Hall":{
+						}
+					}
+				},
+				"Town Hall": {
+				}				
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Chained":"", 
+								"Wanted": ""
+							}
+						},
+						"Character1": {
+
+						}
+					},
+				},
+				"Location1": {
+					"Connections": { 
+						"Town Hall": {				
+						}
+					}
+				}				
+			}
+		}
+	},
+	{
+		"Title": "Konwersja owcy na skórę i baraninę",
+		"Title_Generic": "Przekształcenie obiektu w inny obiekt / obiekt z innym atrybutem",
+		"Id": "03-001",
+		"Description": "Bohater patroszy owcę używając posiadanego noża. Uzyskuje owczą skórę i tuszę.",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sheep": {
+
+								},
+								"Knife": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Sheep's skin": {
+
+								},
+								"Mutton chop": {
+
+								},
+								"Knife": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Otwarcie kufra pilnikiem",
+		"Title_Generic": "Przekształcenie obiektu w inny obiekt / obiekt z innym atrybutem",
+		"Id": "03-002",
+		"Description": "Bohater posiada zamkniety kufer, do którego nie ma klucza. Ma jednak pilnik, którym otwiera kufer. (Czy musi posiadac przedmiot, żeby go otworzyć?)",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Chest": {
+									"Attributes": {
+										"Locked": ""
+									},							
+								},
+								"File": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Chest": {
+
+								},
+								"File": {
+
+								}								
+							}
+						}
+					},
+				}
+			}
+		}
+	},
+	{
+		"Title": "Wydobycie z kufra smoczego jaja",
+		"Title_Generic": "Wyciągnięcie przedmiotu",
+		"Id": "03-002b",
+		"Description": "Bohater posiada kufer, w którym jest jajo smoka. Wyciąga je. (Czy musi posiadac przedmiot, żeby coś z niego wyciągnąć?)",
+		"L_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Chest": {
+									"Attributes": {
+									},
+									"Items": {
+										"Dragon's egg": {
+
+										}
+									}									
+								},
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Location1": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Chest": {
+
+								},								
+								"Dragon's egg": {
+
+								}
+							}
+						}
+					},
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka bohatera z pasterzem (śmierć pasterza)",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "03-003",
+		"Description": "Bohater na pastwisku natknął się na pasterza, zaatakował go i zabił.",
+		"L_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						},
+						"Shepard": {
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						},
+						"Shepard": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Walka bohatera z pasterzem (śmierć bohatera)",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "03-003b",
+		"Description": "Bohater na pastwisku natknął się na pasterza, zaatakował go i zginął.",
+		"L_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						},
+						"Shepard": {
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Shepard": {
+						}
+					}
+				}
+			}
+		}
+	},
+
+	{
+		"Title": "Walka bohatera z pasterzem (ucieczka pasterza)",
+		"Title_Generic": "Walka (ucieczka atakowanego)",
+		"Id": "03-003c",
+		"Description": "Bohater na pastwisku natknął się na pasterza, zaatakował go i pasterz uciekł.",
+		"L_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						},
+						"Shepard": {
+
+						}
+					},
+					"Connections": { 
+						"Location2": {				
+						}
+					}				
+				},
+				"Location2": {			
+				},
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						}
+					},
+					"Connections": { 
+						"Location2": {				
+						}
+					}					
+				},
+				"Location2": {
+					"Characters": {					
+						"Shepard": {
+							"Attributes": {							
+								"Hate to Hero": ""	
+							}								
+						}
+					},					
+				}				
+			},
+		}
+	},
+	{
+		"Title": "Podniesienie kufra",
+		"Title_Generic": "Podniesienie przedmiotu",
+		"Id": "03-004",
+		"Description": "Bohater znajduje w Ratuszu kufer i sobie bierze, nie wiadomo po co, jeśli akurat w pobliżu nie ma strażnika.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Chest": {
+
+						}
+					},
+					"Attributes":{
+						"No guard": ""
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Chest": {
+
+								}
+							}
+						}
+					},
+					"Attributes":{
+						"No guard": ""
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Pozyskanie informacji o jaju smoka",
+		"Title_Generic": "Pozyskanie wiedzy narracyjnej",
+		"Id": "03-005",
+		"Description": "Karczmarz ma dług wdzięczności względem bohatera. Zdradza mu cenną informację o jaju smoka i są kwita.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Gratitude": {
+									"From":"Innkeeper",
+									"To":"Hero"
+								}	
+							}
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Information": "There is a dragon's egg in the chest in the Town Hall.",
+								"Gratitude": {
+									"From":"Innkeeper",
+									"To":"Hero"
+								}								
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Information": "There is a dragon's egg in the chest in the Town Hall."
+							}
+						},
+						"Innkeeper": {
+							"Narration": {
+								"Information": "There is a dragon's egg in the chest in the Town Hall."
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Przeczytanie ogłoszenia karczmarza o baraninie na targowisku",
+		"Title_Generic": "Pozyskanie wiedzy narracyjnej",
+		"Id": "03-006",
+		"Description": "Bohater szwenda się po targu i czyta ogłoszenie karczmarza o braku baraniny. Co się stanie, jak mamy dwa atrybuty o tej samej nazwie? Np. jeden już mamy, a drugi własnie zdobyliśmy?",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Notice board": {
+							"Narration": {
+								"Innkeeper's notice": "I need nutton chop"
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Information01": "Innkeeper needs nutton chop.",
+								"Information02": "Mission started: Expensive scrambled eggs (być może niepotrzebne)"
+							}
+						}
+					},
+					"Items": {
+						"Notice board": {
+							"Narration": {
+								"Innkeeper's notice": "I need nutton chop"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Sprzedaż jaja czarodziejowi",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "03-007",
+		"Description": "Bohater sprzedaje czarodziejowi cenne smocze jajo warte 100. ",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Dragon's egg": {
+									"Attributes": {
+										"Value": "100"
+									}
+								}
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=100",
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+100"
+									}
+								}									
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Dragon's egg": {
+									"Attributes": {
+										"Value": "100"
+									}
+								},
+								"Coins": {
+									"Attributes": {
+										"Amount": "-100"
+									}
+								}									
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Wymiana jaja i eliksiru z czarodziejem",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "03-007",
+		"Description": "Bohater oddaje czarodziejowi cenne smocze jajo. Dostaje w zamian eliksir wzmacjniający warty 90. Bohater może wymienić droższą rzecz na tańszą. odwrotnie nie.",
+		"L_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Dragon's egg": {
+									"Attributes": {
+										"Value": "100"
+									}
+								}
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Value": "90",
+										"Usage": "Energizing"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Wizard's Hut": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Elixir": {
+									"Attributes": {
+										"Value": "90",
+										"Usage": "Energizing"
+									}
+								}
+							}
+						},
+						"Wizard": {
+							"Items": {
+								"Dragon's egg": {
+									"Attributes": {
+										"Value": "100"
+									}
+								}									
+							}
+						}
+					}
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Walka strażnika ratusza z bohaterem (śmierć atakowanego)",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "03-008",
+		"Description": "Strażnik więzienny atakuje bohatera i go zabija.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Guard": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Guard": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+
+
+
+	{
+		"Title": "Walka strażnika ratusza z bohaterem (śmierć atakującego)",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "03-008b",
+		"Description": "Strażnik więzienny atakuje bohatera, ale sam ginie.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Guard": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+
+							}
+						},
+						"Guard": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},	
+
+	{
+		"Title": "Walka strażnika ratusza z bohaterem (ucieczka atakowanego)",
+		"Title_Generic": "Walka (ucieczka atakowanego)",
+		"Id": "03-008c",
+		"Description": "Strażnik więzienny atakuje bohatera, ale bohater ucieka. Wyjątkowo to nie uciekający nienawidzi atakującego, tylko atakujący uciekającego, bo go ośmieszył. Da się tak w porównaniu do produkcji generycznej, czy uciekający też musi zacząć nienawidzić?",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Guard": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						}
+					},
+					"Connections": { 
+						"Road": {				
+						}
+					}
+				},
+				"Road": {
+				}				
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Guard": {
+							"Attributes": {
+								"Hate to Hero": ""
+							}
+						}
+					},
+					"Connections": { 
+						"Road": {				
+						}
+					}
+				},
+				"Road": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Wanted":"",
+								"Hate to Guard": ""								
+							}
+						}
+					},
+				}				
+			}
+		}
+	},	
+	{
+		"Title": "Walka bohatera ze strażnikiem ratusza (śmierć atakowanego)",
+		"Title_Generic": "Walka (śmierć atakowanego)",
+		"Id": "03-016",
+		"Description": "Bohater atakuje strażnika więziennego i, o dziwo, wygrywa.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						},
+						"Guard": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						},
+						"Guard": {
+							"Attributes": {
+								"Dead": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	},	
+	{
+		"Title": "Walka bohatera ze strażnikiem ratusza (śmierć atakującego)",
+		"Title_Generic": "Walka (śmierć atakującego)",
+		"Id": "03-016",
+		"Description": "Bohater atakuje strażnika więziennego, ale to nie był najlepszy pomysł, bo ginie.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						},
+						"Guard": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Dead": ""
+							}
+						},
+						"Guard": {
+						}
+					}
+				}
+			}
+		}
+	},		
+
+	{
+		"Title": "Walka bohatera ze strażnikiem ratusza (ucieczka atakowanego)",
+		"Title_Generic": "Walka (ucieczka atakowanego)",
+		"Id": "03-008c",
+		"Description": "Bohater atakuje strażnika więziennego, ale strażnik ucieka. Czy w ogóle strażnik może uciec z ratusza? Raczej nie powinien, ale jak to zapisać w warunku?",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Agresja": ""
+							}
+						},
+						"Guard": {
+						}
+					},
+					"Connections": { 
+						"Road": {				
+						}
+					}						
+				},
+				"Road": {				
+				}				
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+						}
+					},
+					"Connections": { 
+						"Road": {				
+						}
+					}						
+				},
+				"Road": {
+					"Characters": {
+						"Guard": {
+							"Attributes": {
+								"Wanted":"",
+								"Hate to Hero": ""								
+							}
+						}
+					},			
+				}				
+			}
+		}
+	},
+
+	{
+		"Title": "Sprzedaż jaja kupcowi",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "03-007b",
+		"Description": "",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Dragon's egg": {
+									"Attributes": {
+										"Value": "100"
+									}
+								}
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=100"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+100"
+									}
+								}
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Dragon's egg": {
+									"Attributes": {
+										"Value": "100"
+									}
+								},
+								"Coins": {
+									"Attributes": {
+										"Amount": "-100"
+									}
+								}									
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Ukrycie się bohatera za beczką",
+		"Title_Generic": "Imperatyw narracyjny zmiany atrybutu obiektu",
+		"Id": "03-010",
+		"Description": "Bohater zauważa znajdującą sie w ratuszu beczkę i ukrywa się za nią.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Information": "You can hide behind the barrel.",
+							}
+						}
+					},
+					"Items": {
+						"Wine barrel": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Hidden": ""
+							},
+							"Narration": {
+								"Information": "You can hide behind the barrel.",
+							}							
+						}
+					},
+					"Items": {
+						"Wine barrel": {
+
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Uprowadzenie owcy",
+		"Title_Generic": "Kradzież przedmiotu z lokacji",
+		"Id": "03-011",
+		"Description": "Bohater znajduje owcę na pastwisku. Rozgląda się i ponieważ nikogo nie ma w okolicy – kradnie ją.",
+		"L_Side": {
+			"Locations": {
+				"Pasture": {
+					"Attributes": {
+						"Alive inside":"1" 
+					},					
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Sheep": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Pasture": {
+					"Attributes": {
+						"Alive inside":"1" 
+					},					
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Wanted": {
+
+								}
+							},
+							"Items": {
+								"Sheep": {
+
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+	},
+
+
+	{
+		"Title": "Wtrącenie poszukiwanego bohatera do więzienia",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-015",
+		"Description": "Bohater poszukiwany listem gończym lub skuty (jak zapisac wariantywność? dwie produkcje?) jest przeprowadzony przez strażnika z ratusza do więzienia.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Wanted": ""
+							}
+						},
+						"Guard": {
+
+						}
+					},
+					"Connections": { 
+						"Prison": {				
+						}
+					}					
+				},
+				"Prison": {
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Guard": {
+
+						}
+					},
+					"Connections": { 
+						"Prison": {				
+						}
+					}					
+				},
+				"Prison": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},					
+				}
+			}		
+		}
+	},
+
+	{
+		"Title": "Wtrącenie związanego bohatera do więzienia",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-015",
+		"Description": "Bohater poszukiwany listem gończym lub skuty (jak zapisac wariantywność? dwie produkcje?) jest przeprowadzony przez strażnika z ratusza do więzienia.",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Chained": ""
+							}
+						},
+						"Guard": {
+
+						}
+					},
+					"Connections": { 
+						"Prison": {				
+						}
+					}					
+				},
+				"Prison": {
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Guard": {
+
+						}
+					},
+					"Connections": { 
+						"Prison": {				
+						}
+					}					
+				},
+				"Prison": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},					
+				}
+			}		
+		}
+	},
+
+
+	{
+		"Title": "Wywabienie strażnika",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-017",
+		"Description": "Bohater ukryty za beczką prowokuje strażnika do wybiegnięcia z ratusza na drogę. Bohater wychodzi zza beczki po wybiegnięciu strażnika (?)",
+		"L_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+							"Attributes": {
+								"Hidden": ""
+							}
+						},
+						"Guard": {
+
+						}
+					},
+					"Items": {
+						"Wine barrel": {
+
+						}
+					},
+					"Connections": { 
+						"Road": {				
+						}
+					}					
+				},
+				"Road": {
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Items": {
+						"Wine barrel": {
+
+						}
+					},
+					"Connections": { 
+						"Road": {				
+						}
+					}					
+				},
+				"Road": {
+					"Characters": {
+						"Guard": {
+
+						}
+					},			
+				}
+			}		
+		}
+	},
+	{
+		"Title": "Zakup pilnika",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "03-018",
+		"Description": "Bohater kupuje na targu pilnik za 1 monetę.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Anount": ">=1"
+									}
+								}
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"File": {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"File": {
+
+								},
+								"Coins": {
+									"Attributes": {
+										"Anount": "-1"
+									}
+								}								
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+1"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zbycie baraniny (karczma)",
+		"Title_Generic": "Wymiana przedmiotu na atrybut",
+		"Id": "03-019",
+		"Description": "Bohater oddaje karczmarzowi baraninę zyskując jego wdzięczność.",
+		"L_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Mutton chop": {
+
+								}
+							}
+						},
+						"Innkeeper": {
+
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Inn": {
+					"Characters": {
+						"Hero": {
+							"Narration": {
+								"Gratitude": {
+									"From":"Innkeeper",
+									"To":"Hero"
+									}
+								}	
+							},
+						"Innkeeper": {
+							"Items": {
+								"Mutton chop": {
+
+								}
+							},
+							"Narration": {
+								"Gratitude": {
+									"From":"Innkeeper",
+									"To":"Hero"
+								}	
+							}							
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zbycie baraniny (targ)",
+		"Title_Generic": "Wymiana przedmiotu na przedmiot",
+		"Id": "03-020",
+		"Description": "Bohater sprzedaje handlarzowi na targu baraninę za 2 monety.",
+		"L_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Mutton chop": {
+
+								}
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": ">=2"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"R_Side": {
+			"Locations": {
+				"Market": {
+					"Characters": {
+						"Hero": {
+							"Items": {
+								"Coins": {
+									"Attributes": {
+										"Amount": "+2"
+									}
+								}
+							}
+						},
+						"Merchant": {
+							"Items": {
+								"Mutton chop": {
+
+								},
+								"Coins": {
+									"Attributes": {
+										"Amount": "-2"
+									}
+								}								
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Title": "Zmiana lokacji droga-karczma",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-021",
+		"Description": "Bohater wchodzi z drogi do karczmy.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": { 
+						"Inn": {				
+						}
+					}	
+				},
+				"Inn": {
+				}
+			}		
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": { 
+						"Inn": {				
+						}
+					}					
+
+				},
+				"Inn": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},							
+				}
+			}		
+		}
+	},
+	{
+		"Title": "Zmiana lokacji droga-pastwisko",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-022",
+		"Description": "Bohater przechodzi z drogi na pastwisko.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": { 
+						"Pasture": {				
+						}
+					}					
+				},
+				"Pasture": {
+				}
+			},		
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": { 
+						"Pasture": {				
+						}
+					}
+				},
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},				
+				}
+			}			
+		}
+	},
+	{
+		"Title": "Zmiana lokacji droga-ratusz",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-023",
+		"Description": "Bohater wchodzi z drogi do ratusza.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": { 
+						"Town Hall": {				
+						}
+					}					
+				},
+				"Town Hall": {
+				}
+			}		
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": { 
+						"Town Hall": {				
+						}
+					}	
+				},
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},						
+				}
+			}		
+		}
+	},
+	{
+		"Title": "Zmiana lokacji karczma-droga",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-024",
+		"Description": "Bohater wychodzi z karczmy na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Road": {
+					"Connections": { 
+						"Inn": {				
+						}
+					}	
+				},
+				"Inn": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},				
+				}
+			}		
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": { 
+						"Inn": {				
+						}
+					}						
+				},
+				"Inn": {
+					"Connections": { 
+						"Road": {				
+						}
+					}	
+				}
+			}			
+		}
+	},
+	{
+		"Title": "Zmiana lokacji pastwisko-droga",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-025",
+		"Description": "Bohater przechodzi z pastwiska na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Road": {					
+				},
+				"Pasture": {
+					"Characters": {
+						"Hero": {
+						},
+					},
+					"Connections": { 
+						"Road": {				
+						}
+					}							
+				}
+			},			
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},						
+				},
+				"Pasture": {
+					"Connections": { 
+						"Road": {				
+						}
+					}					
+				}
+			}			
+		}
+	},
+	{
+		"Title": "Zmiana lokacji ratusz-droga",
+		"Title_Generic": "Zmiana lokacji",
+		"Id": "03-026",
+		"Description": "Bohater wychodzi z ratusza na drogę.",
+		"L_Side": {
+			"Locations": {
+				"Road": {				
+				},
+				"Town Hall": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},
+					"Connections": { 
+						"Road": {				
+						}
+					}					
+				}
+			}			
+		},
+		"R_Side": {
+			"Locations": {
+				"Road": {
+					"Characters": {
+						"Hero": {
+
+						}
+					},						
+				},
+				"Town Hall": {
+					"Connections": { 
+						"Road": {				
+						}
+					}						
+
+				}
+			}		
+		}
+	}
+]
