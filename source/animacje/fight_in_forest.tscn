@@ -169,9 +169,6 @@ anims/fight_good_escape = SubResource( 2 )
 [node name="merchant" parent="." instance=ExtResource( 2 )]
 position = Vector2( 234.95, 519.264 )
 
-[node name="state" parent="merchant" index="1"]
-scale = Vector2( 1, 1 )
-
 [node name="walk" parent="merchant/state" index="1"]
 position = Vector2( 0, -0.555558 )
 

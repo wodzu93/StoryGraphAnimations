@@ -6,8 +6,6 @@
 [ext_resource path="res://image/Characters/Główny bohater 13/bohater_martwy.png" type="Texture" id=4]
 [ext_resource path="res://animacje/items.tscn" type="PackedScene" id=5]
 
-
-
 [sub_resource type="Animation" id=1]
 resource_name = "attack"
 tracks/0/type = "value"
