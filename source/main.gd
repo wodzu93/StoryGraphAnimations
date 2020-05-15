@@ -21,14 +21,7 @@ var selected_vertex:GraphNode
 func _ready():
 	Globals.event_log = event_log
 	Globals.load_last_open_files()
-#	#NOTE tu zmieniamy initails
-#	var error = game_graph.load_initials("res://json_game/initials/initials.json")
-#	if error != OK:
-#		event_log.add_text("Failed loading initials.json")
-#	else:
-#		event_log.add_text("Loaded initials.json")
-#	game_graph.world.save_JSON("res://json_game/world/game_graph_old.json")
-#	##-----------------------
+
 	if Globals.last_world_file:
 		var file_id =  world_selector.files.find(Globals.last_world_file)
 		if file_id >= 0:
@@ -47,8 +40,6 @@ func _ready():
 		Globals.last_actions_file =  actions_selector.get_item_text(file_id)
 		load_production()
 	
-	Globals.save_last_open_files()
-
 func load_world():
 	clear_graph(game_graph_handle)
 	game_graph.world.load_JSON(world_selector.rootPath +'/'+Globals.last_world_file)
@@ -56,6 +47,7 @@ func load_world():
 	event_log.clear()
 	event_log.add_text("Game graph complete")
 	game_graph.world.save_JSON(world_selector.rootPath +'/'+Globals.last_world_file)
+	Globals.save_last_open_files()
 	
 func load_production():
 	production_viewer.load_production_list(Globals.last_actions_file)
@@ -149,4 +141,17 @@ func _on_next_pressed():
 	load_production()
 	game_graph.test_production(production_viewer.current)
 
+func _on_initials_pressed():
+	$load_initials.popup(Rect2(300,300,300,300))
 
+func _on_load_initials_file_selected(path:String):
+	Globals.last_world_file = path.get_file()
+	var error = game_graph.load_initials(path)
+	if error != OK:
+		event_log.add_text("Failed loading initials")
+	else:
+		event_log.add_text("Loaded initials.json")
+	game_graph.world.save_JSON("res://json_game/world/"+Globals.last_world_file)
+	
+	load_world()
+	

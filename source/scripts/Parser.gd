@@ -46,7 +46,7 @@ func load_JSON(file_name):
 func save_JSON(file_name):
 	var file = File.new()
 	var err  = file.open(file_name, File.WRITE)
-	assert (err == OK || err == ERR_FILE_NOT_FOUND, "Error opening file, err" + str(err))
+	assert (err == OK || err == ERR_FILE_NOT_FOUND, "Error opening file: "+file_name+", error code: " + str(err))
 
 	file.store_string(JSON.print(item_list, "\t"))
 	file.close()

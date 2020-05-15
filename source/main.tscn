@@ -160,6 +160,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+scroll_offset = Vector2( -536, 0 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
@@ -257,6 +258,7 @@ margin_bottom = 30.0
 rect_min_size = Vector2( 60, 20 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
+disabled = true
 text = "Apply"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -313,6 +315,35 @@ margin_left = -446.0
 margin_right = -263.0
 margin_bottom = 20.0
 text = "save_file_name"
+
+[node name="initials" type="Button" parent="GUI/Control/world_selector"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -520.0
+margin_top = -20.0
+margin_right = -454.0
+margin_bottom = -1.0
+text = "Initials"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="load_initials" type="FileDialog" parent="."]
+margin_right = 332.0
+margin_bottom = 124.0
+theme = ExtResource( 4 )
+window_title = "Load initials"
+resizable = true
+mode = 0
+filters = PoolStringArray( "*.json" )
+current_dir = "res://json_game/initials"
+current_file = "initials.json"
+current_path = "res://json_game/initials/initials.json"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="scroll_offset_changed" from="VSplit/HSplit/LPanel/HSplit/GraphLeft" to="." method="_on_GraphEditLeft_scroll_offset_changed"]
 [connection signal="scroll_offset_changed" from="VSplit/HSplit/RPanel/HSplit/GraphRight" to="." method="_on_GraphEditRight_scroll_offset_changed"]
 [connection signal="gui_input" from="VSplit/HBox/game_graph" to="." method="_on_game_graph_gui_input"]
@@ -325,3 +356,5 @@ text = "save_file_name"
 [connection signal="item_selected" from="GUI/Control/actions_selector" to="." method="_on_actions_selector_item_selected"]
 [connection signal="item_selected" from="GUI/Control/world_selector" to="." method="_on_world_selector_item_selected"]
 [connection signal="pressed" from="GUI/Control/world_selector/save_world" to="." method="_on_save_world_pressed"]
+[connection signal="pressed" from="GUI/Control/world_selector/initials" to="." method="_on_initials_pressed"]
+[connection signal="file_selected" from="load_initials" to="." method="_on_load_initials_file_selected"]
