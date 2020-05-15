@@ -298,38 +298,29 @@ margin_bottom = -48.0
 grow_horizontal = 0
 rootPath = "res://json_game/world"
 
-[node name="save_world" type="Button" parent="GUI/Control/world_selector"]
+[node name="save_world" type="Button" parent="GUI/Control"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -254.78
-margin_top = 5.45251
-margin_right = -206.78
-margin_bottom = 25.4525
-text = "Save"
+margin_left = -163.0
+margin_top = -44.0
+margin_right = -16.0
+margin_bottom = -24.0
+text = "Save world state"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LineEdit" type="LineEdit" parent="GUI/Control/world_selector"]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -200.0
-margin_top = 25.0
-margin_right = 1.52588e-05
-margin_bottom = 45.0
-text = "save_world_file"
-
-[node name="initials" type="Button" parent="GUI/Control/world_selector"]
+[node name="load_initials" type="Button" parent="GUI/Control"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -480.0
-margin_top = 6.0
-margin_right = -262.0
-margin_bottom = 25.0
+margin_left = -385.0
+margin_top = -43.5366
+margin_right = -167.0
+margin_bottom = -23.5366
 text = "Load world using Initials"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -349,6 +340,20 @@ current_path = "res://json_game/initials/initials.json"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="save_world" type="FileDialog" parent="."]
+margin_right = 332.0
+margin_bottom = 124.0
+theme = ExtResource( 4 )
+window_title = "Save world state"
+resizable = true
+filters = PoolStringArray( "*.json" )
+current_dir = "res://json_game/world"
+current_file = "world_state.json"
+current_path = "res://json_game/world/world_state.json"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="scroll_offset_changed" from="VSplit/HSplit/LPanel/HSplit/GraphLeft" to="." method="_on_GraphEditLeft_scroll_offset_changed"]
 [connection signal="scroll_offset_changed" from="VSplit/HSplit/RPanel/HSplit/GraphRight" to="." method="_on_GraphEditRight_scroll_offset_changed"]
 [connection signal="gui_input" from="VSplit/HBox/game_graph" to="." method="_on_game_graph_gui_input"]
@@ -360,6 +365,7 @@ __meta__ = {
 [connection signal="pressed" from="GUI/Control/next" to="." method="_on_next_pressed"]
 [connection signal="item_selected" from="GUI/Control/actions_selector" to="." method="_on_actions_selector_item_selected"]
 [connection signal="item_selected" from="GUI/Control/world_selector" to="." method="_on_world_selector_item_selected"]
-[connection signal="pressed" from="GUI/Control/world_selector/save_world" to="." method="_on_save_world_pressed"]
-[connection signal="pressed" from="GUI/Control/world_selector/initials" to="." method="_on_initials_pressed"]
+[connection signal="pressed" from="GUI/Control/save_world" to="." method="_on_save_world_pressed"]
+[connection signal="pressed" from="GUI/Control/load_initials" to="." method="_on_load_initials_pressed"]
 [connection signal="file_selected" from="load_initials" to="." method="_on_load_initials_file_selected"]
+[connection signal="file_selected" from="save_world" to="." method="_on_save_world_file_selected"]

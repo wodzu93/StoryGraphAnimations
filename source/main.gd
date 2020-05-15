@@ -88,7 +88,6 @@ func _on_actions_selector_item_selected(id):
 
 func _on_world_selector_item_selected(id):
 	Globals.last_world_file = world_selector.files[id]
-	$GUI/Control/world_selector/LineEdit.text = Globals.last_world_file
 	load_world()
 	Globals.save_last_open_files()
 
@@ -123,10 +122,6 @@ func _on_game_graph_gui_input(event):
 				clear_graph(vertex_view_handle)
 				game_graph.current_graph.visible = false
 
-func _on_save_world_pressed():
-	game_graph.world.save_JSON(world_selector.rootPath +'/'+ $GUI/Control/world_selector/LineEdit.text)
-	world_selector.update_list()
-
 func _on_apply_pressed():
 	game_graph.apply_production(production_viewer.current)
 	game_graph.world.save_JSON(world_selector.rootPath +'/test_world.json')
@@ -141,17 +136,28 @@ func _on_next_pressed():
 	load_production()
 	game_graph.test_production(production_viewer.current)
 
-func _on_initials_pressed():
-	$load_initials.popup(Rect2(300,300,300,300))
+func _on_load_initials_pressed():
+	var pos = $GUI/Control/load_initials.rect_global_position
+	$load_initials.popup(Rect2(pos - Vector2(50,350),Vector2(300,300)) )
 
+func _on_save_world_pressed():
+	var pos = $GUI/Control/save_world.rect_global_position
+	$save_world.popup(Rect2(pos - Vector2(150,350),Vector2(300,300)) )
+	
+	
 func _on_load_initials_file_selected(path:String):
 	Globals.last_world_file = path.get_file()
 	var error = game_graph.load_initials(path)
 	if error != OK:
 		event_log.add_text("Failed loading initials")
 	else:
-		event_log.add_text("Loaded initials.json")
+		event_log.add_text("Loaded initials file: " + path)
 	game_graph.world.save_JSON("res://json_game/world/"+Globals.last_world_file)
 	
 	load_world()
 	
+func _on_save_world_file_selected(path):
+	game_graph.world.save_JSON(path)
+#	game_graph.world.save_JSON(world_selector.rootPath +'/'+ $GUI/Control/world_selector/LineEdit.text)
+	world_selector.update_list()
+	Globals.event_log.add_text("Saved world file: " + path)
