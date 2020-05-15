@@ -88,7 +88,6 @@ scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
 
 [node name="hero" parent="." instance=ExtResource( 3 )]
-editor/display_folded = true
 position = Vector2( 209.231, 556.077 )
 
 [node name="stand" parent="hero/state" index="0"]
@@ -97,5 +96,6 @@ visible = false
 [node name="walk" parent="hero/state" index="1"]
 visible = true
 position = Vector2( 0, -10 )
+frame = 1
 
 [editable path="hero"]
