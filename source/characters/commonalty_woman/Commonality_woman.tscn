@@ -1,0 +1,201 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://characters/characters/commonalty_woman/reka2.svg" type="Texture" id=2]
+[ext_resource path="res://characters/characters/commonalty_woman/noga2.svg" type="Texture" id=3]
+[ext_resource path="res://characters/characters/commonalty_woman/glowa.svg" type="Texture" id=4]
+[ext_resource path="res://characters/characters/commonalty_woman/reka1.svg" type="Texture" id=5]
+[ext_resource path="res://characters/characters/commonalty_woman/noga1.svg" type="Texture" id=6]
+[ext_resource path="res://characters/characters/commonalty_woman/korpus.svg" type="Texture" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Idle"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArmLeft:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 101.624, -29.1777 ), Vector2( 81.2668, -23.5284 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ArmLeft:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.662471, 8.42984 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ArmRight:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -141.295, -21.2094 ), Vector2( -113.633, -11.6641 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmRight:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -1.68785, -10.3765 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Walk"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("LegLeft:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 43.6237, 450.097 ), Vector2( 64.8566, 460.806 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LegLeft:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -6.92705 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LegRight:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -52.1627, 454.413 ), Vector2( -69.0693, 453.434 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LegRight:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 5.48987 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ArmLeft:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 101.624, -29.1777 ), Vector2( 81.2668, -23.5284 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ArmLeft:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.662471, 8.42984 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ArmRight:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -141.295, -21.2094 ), Vector2( -113.633, -11.6641 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ArmRight:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -1.68785, -10.3765 ]
+}
+
+[node name="Commonality_woman" instance=ExtResource( 1 )]
+
+[node name="Head" type="Sprite" parent="." index="2"]
+position = Vector2( 2.27203, -238.568 )
+z_index = 1
+texture = ExtResource( 4 )
+
+[node name="Torso" type="Sprite" parent="." index="3"]
+texture = ExtResource( 7 )
+
+[node name="LegLeft" type="Sprite" parent="." index="4"]
+position = Vector2( 49.7988, 453.212 )
+rotation = -0.0351607
+z_index = -2
+texture = ExtResource( 3 )
+
+[node name="LegRight" type="Sprite" parent="." index="5"]
+position = Vector2( -57.0796, 454.129 )
+rotation = 0.0278658
+z_index = -2
+texture = ExtResource( 6 )
+
+[node name="ArmLeft" type="Sprite" parent="." index="6"]
+position = Vector2( 95.7033, -27.5347 )
+rotation = 0.0509883
+z_index = -1
+texture = ExtResource( 2 )
+
+[node name="ArmRight" type="Sprite" parent="." index="7"]
+position = Vector2( -133.25, -18.4334 )
+rotation = -0.0735607
+z_index = -1
+texture = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="8"]
+anims/Idle = SubResource( 1 )
+anims/Walk = SubResource( 2 )
